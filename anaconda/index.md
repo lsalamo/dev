@@ -35,6 +35,4 @@ markmap:
 #### [How to use RStudio with R environments](https://docs.anaconda.com/free/navigator/tutorials/create-r-environment/)
 
 
-https://anaconda.cloud/
-
 
