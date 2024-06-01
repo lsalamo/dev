@@ -7,7 +7,7 @@ markmap:
 
 # <img src='https://i.imgur.com/c0S3aFz.png' style='height:40px;width:auto'> [JetBrains](https://www.jetbrains.com/)
 
-## <img src='https://canalsenior.es/wp-content/uploads/2022/09/google-drive-personas-mayores-canal-senior.png' style='height:20px;width:auto'> [Google Drive](https://drive.google.com/drive/folders/15C-ziws3yttmQnnnR7gpHs0P6uAtTXPt?usp=sharing)
+## <img src='https://i.imgur.com/ZNXS54N.png' style='height:30px;width:auto'> [Google Drive](https://drive.google.com/drive/folders/15C-ziws3yttmQnnnR7gpHs0P6uAtTXPt?usp=sharing)
 
 ## IDEs
 
@@ -26,12 +26,9 @@ markmap:
 
 ## Help
 
-### [JetBrains](https://www.jetbrains.com/help/pycharm/getting-started.html)
+### [PyCharm](https://www.jetbrains.com/help/pycharm/getting-started.html)
 #### [Configure a Python interpreter](https://www.jetbrains.com/help/pycharm/configuring-python-interpreter.html)
 ##### [conda environment](https://www.jetbrains.com/help/pycharm/conda-support-creating-conda-virtual-environment.html)
-
-### Anaconda
-#### [Configuring a conda environment in PyCharm](https://docs.anaconda.com/free/working-with-conda/ide-tutorials/pycharm)
 
 
 
