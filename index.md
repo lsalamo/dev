@@ -5,10 +5,6 @@ markmap:
   initialExpandLevel: 5
 ---
 
-
-
-https://icon-sets.iconify.design/logos/jetbrains-icon/
-
 # dev
 
 ## <img src='https://i.imgur.com/c0S3aFz.png' style='height:40px;width:auto'> [JetBrains](jetbrains/index.md)
