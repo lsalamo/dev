@@ -34,5 +34,8 @@ markmap:
 #### [Using R language with Anaconda](https://docs.anaconda.com/free/working-with-conda/packages/using-r-language/)
 #### [How to use RStudio with R environments](https://docs.anaconda.com/free/navigator/tutorials/create-r-environment/)
 
+## [Terminal](https://docs.google.com/document/d/1kGmzaluGIA2vRWTsTUtUE4NCic_R1bvHnp_tUDNwkvs/edit?usp=drive_link)
+
+
 
 
