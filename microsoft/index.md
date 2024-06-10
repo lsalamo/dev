@@ -22,7 +22,10 @@ https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-cont
 
 ## Learning
 
-## [Help](https://code.visualstudio.com/docs)
+## Help
+### [Visual Studio Code (VS Code)](https://code.visualstudio.com/docs)
+#### [Python](https://code.visualstudio.com/docs/python/python-quick-start)
+##### [Python environments in VS Code](https://code.visualstudio.com/docs/python/environments)
 
-### [Python](https://code.visualstudio.com/docs/python/python-quick-start)
-### [Docker](https://code.visualstudio.com/docs/containers/overview)
+#### [Docker](https://code.visualstudio.com/docs/containers/overview)
+##### [Python environments in VS Code](https://code.visualstudio.com/docs/python/environments)

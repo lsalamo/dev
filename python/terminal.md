@@ -43,7 +43,6 @@ deactivate
 
 ### [USING VIRTUALENV](https://virtualenv.pypa.io/en/stable/index.html)
 
-
 Es una biblioteca que ofrece más funcionalidades que venv.Aunque puedes crear un entorno virtual usando venv con Python3, se recomienda que instales y use virtualenv en su lugar.
 
 ```bash
@@ -64,6 +63,47 @@ deactivate
 
 # Delete virtual environment
 rm -rf venv
+```
+[Python environments in VS Code](https://code.visualstudio.com/docs/python/environments)
+
+![alt text](vsc_interpreter.png)
+
+### Create the environment from the requirements.txt file
+
+Pip es una excelente opción para proyectos pequeños y medianos. Pip se apoya en un archivo llamado **requirements.txt** que lo utiliza para registrar las dependencias del proyecto. Contiene una lista de los paquetes de Python necesarios, junto con sus versiones específicas o restricciones de versión.
+
+```bash
+# Install package_name to latest version
+python3 -m pip install -r requirements.txt
+```
+
+Después de instalar las dependencias usando pip, ejecuta el siguiente comando en la terminal:
+
+```bash
+# Registrar nuestras dependencias en el archivo requirements.txt
+pip freeze > requirements.txt
+```
+
+Este comando captura todas las dependencias instaladas y sus versiones exactas en un archivo **requirements.txt**. Puedes incluir este archivo en tu repositorio para que otros desarrolladores puedan replicar el entorno.
+
+Es una buena práctica ejecutar el comando pip freeze para actualizar el archivo **requirements.txt** cada vez que instalas una nueva dependencia o actualizas una existente en tu entorno de desarrollo
+
+Example file requirements.txt
+
+```json
+contourpy==1.1.1
+cycler==0.12.1
+fonttools==4.53.0
+kiwisolver==1.4.5
+matplotlib==3.6.2
+numpy==1.24.4
+packaging==24.1
+pandas==1.5.1
+pillow==10.3.0
+pyparsing==3.1.2
+python-dateutil==2.9.0.post0
+pytz==2024.1
+six==1.16.0
 ```
 
 ## VARIABLES
@@ -106,23 +146,3 @@ pip list | grep python
 # Show information about package
 pip show [package_name]
 ```
-
-## MANAGING PACKAGE DEPENDECIES
-
-Pip es una excelente opción para proyectos pequeños y medianos. Pip se apoya en un archivo llamado **requirements.txt** que lo utiliza para registrar las dependencias del proyecto. Contiene una lista de los paquetes de Python necesarios, junto con sus versiones específicas o restricciones de versión.
-
-```bash
-# Install package_name to latest version
-python3 -m pip install -r requirements.txt
-```
-
-Después de instalar las dependencias usando pip, ejecuta el siguiente comando en la terminal:
-
-```bash
-# Registrar nuestras dependencias en el archivo requirements.txt
-pip freeze > requirements.txt
-```
-
-Este comando captura todas las dependencias instaladas y sus versiones exactas en un archivo **requirements.txt**. Puedes incluir este archivo en tu repositorio para que otros desarrolladores puedan replicar el entorno.
-
-Es una buena práctica ejecutar el comando pip freeze para actualizar el archivo **requirements.txt** cada vez que instalas una nueva dependencia o actualizas una existente en tu entorno de desarrollo
