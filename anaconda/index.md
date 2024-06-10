@@ -15,13 +15,15 @@ markmap:
 
 ## [Services](https://marketplace.visualstudio.com/)
 ### [Anaconda Cloud](https://anaconda.cloud/)
-### [Packages](https://anaconda.cloud/package-categories)
+#### [Packages](https://anaconda.cloud/package-categories)
 
 ## [Learning](https://learning.anaconda.cloud/)
 
 ## [Help](https://docs.anaconda.com/)
 
-### [Conda](https://docs.conda.io/projects/conda/en/stable/index.html)
+
+### [Conda](https://docs.conda.io/)
+#### [Conda Documentation](https://docs.conda.io/projects/conda/en/stable/index.html)
 #### [Commands](https://docs.conda.io/projects/conda/en/stable/commands/index.html)
 #### [Managing environments](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
 #### [Managing Python](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-python.html)

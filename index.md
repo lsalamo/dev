@@ -7,6 +7,8 @@ markmap:
 
 # dev
 
+## <img src='https://i.imgur.com/5WuXRVs.png' style='height:40px;width:auto'> [Python](python/index.md)
+
 ## <img src='https://i.imgur.com/c0S3aFz.png' style='height:40px;width:auto'> [JetBrains](jetbrains/index.md)
 
 ## <img src='https://i.imgur.com/YeX1O1Q.png' style='height:40px;width:auto'> [Microsoft](microsoft/index.md)

@@ -33,11 +33,17 @@ markmap:
 #### [Actions](https://docs.github.com/es/actions)
 #### [Pages](https://docs.github.com/es/pages)
 #### [Gitignore](https://github.com/github/gitignore)
-#### [Generate new SSH Key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
-#### [Add a nes SSH Key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
-#### [Test your SSH connection](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection)
+#### SSH Key
+##### [Checking for existing SSH keys](hhttps://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys)
+##### [Generate new SSH Key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+##### [Add a nes SSH Key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+##### [Test your SSH connection](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection)
+#### Markdown
+##### [Sintaxis de escritura y formato básicos](https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+##### [Readme & Actions > abhisheknaiidu / awesome-github-profile-readme](https://github.com/abhisheknaiidu/awesome-github-profile-readme)
+##### [Stats > anuraghazra / github-readme-stats](https://github.com/abhisheknaiidu/awesome-github-profile-readme)
 
-
+### [Markdown](https://www.markdownguide.org/)
 
 ### [Atlassian](https://www.atlassian.com/es/git)
 
