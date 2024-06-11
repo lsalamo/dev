@@ -1,6 +1,8 @@
 
 # [CONDA TERMINAL](https://docs.conda.io/projects/conda/en/latest/commands/index.html)
 
+Conda es un gestor de paquetes y entornos enfocado principalmente en la ciencia de datos y el desarrollo en Python.
+
 ```bash
 # Check conda version
 conda -V
@@ -149,6 +151,13 @@ conda install [package_name]
 
 # Install package_name to v5.0
 conda install [package_name]=5.0.0
+
+# Update conda packages to the latest compatible version
+conda update -n [env_name] [package_name]
+
+# Remove a list of packages from an environment 'myenv':
+conda remove scipy
+conda remove -n [env_name] scipy curl wheel
 
 # List packages installed
 conda list

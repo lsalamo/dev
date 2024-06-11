@@ -19,7 +19,6 @@ markmap:
 ## [Help](https://docs.anaconda.com/)
 
 ### [Conda](https://docs.conda.io/)
-#### [Conda Documentation](https://docs.conda.io/projects/conda/en/stable/index.html)
 #### [Commands](https://docs.conda.io/projects/conda/en/stable/commands/index.html)
 #### [Managing environments](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
 #### [Managing Python](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-python.html)
@@ -39,8 +38,6 @@ markmap:
 
 ### [Anaconda.org](https://docs.anaconda.com/free/anacondaorg) - Package management service by Anaconda
 
-## [Terminal](https://docs.google.com/document/d/1kGmzaluGIA2vRWTsTUtUE4NCic_R1bvHnp_tUDNwkvs/edit?usp=drive_link)
-
-
+## [Terminal](conda_terminal.md)
 
 

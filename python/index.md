@@ -56,6 +56,8 @@ markmap:
 ##### [hvPlot](https://hvplot.holoviz.org/)
 ##### [Pandas Bokeh](https://github.com/PatrikHlobil/Pandas-Bokeh)
 
+### [Machine Learning - Forecasting](../machine_learning/forecasting/index.md)
+
 ## Tools
 ### [Pandas Tutor](https://pandastutor.com/) - Visualizes how Python code transforms dataframes
 ### [Streamlit](https://streamlit.io/) - Turns data scripts into shareable web apps in minutes
@@ -83,8 +85,7 @@ markmap:
 #### [Jupyter Lab](https://jupyterlab.readthedocs.io/en/stable/)
 #### [Jupyter Widgets](https://ipywidgets.readthedocs.io/en/stable/)
 
-## [Terminal](https://docs.google.com/document/d/1kGmzaluGIA2vRWTsTUtUE4NCic_R1bvHnp_tUDNwkvs/edit?usp=drive_link)
-
+## [Terminal](python_pip_terminal.md)
 
 
 

@@ -21,6 +21,7 @@ brew doctor
 # Brew configuration
 brew config
 ```
+
 ## BREW SEARCH
 
 ```bash
