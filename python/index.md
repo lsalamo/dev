@@ -22,7 +22,7 @@ markmap:
 
 ### [JetBrains](https://www.jetbrains.com/) - [PyCharm Professional (Paid)](https://www.jetbrains.com/pycharm/)
 
-### [Microsoft](https://www.microsoft.com/) - [Visual Studio Code (VS Code)](https://code.visualstudio.com/)
+### [Microsoft - Visual Studio Code (VS Code)](../meta/index.md)
 
 ### Google - [Colab](https://colab.research.google.com/) - Launch a live python notebooks
 
@@ -37,10 +37,7 @@ markmap:
 
 ## [Packages](https://packaging.python.org/en/latest/tutorials/installing-packages/)
 
-### Package Manager
-#### [Package Installer for Python (pip)](https://pip.pypa.io/) - You can use pip to install packages from PyPI and other indexes
-#### [Python Package Index (PyPI)](https://pypi.org/) - Small / Medium projects
-#### [Poetry](https://python-poetry.org/) - Complex projects
+### [Package Management](<../package_management/index.md>) 
 
 ### [Pandas](https://pandas.pydata.org/)
 
