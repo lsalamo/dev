@@ -1,13 +1,15 @@
 [tool.poetry]
 name = "dev"
 version = "0.1.0"
-description = ""
-authors = ["Luis Salamo <lsalamo@gmail.com>"]
+description = "mindmap dev"
+authors = ["Luis Salamo Esteve <lsalamo@gmail.com>"]
 readme = "README.md"
-packages = [{include = "dev"}]
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "^3.12"
+dns-shark = "1"
+setuptools-git = "^1.2"
 
-[tool.setuptools]
-py-modules = []
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
