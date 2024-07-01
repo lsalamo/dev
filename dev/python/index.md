@@ -30,11 +30,6 @@ markmap:
 
 ### [Atom](https://atom-editor.cc/)
 
-## Virtual Environments
-### [Python](https://www.python.org/) - [venv](https://docs.python.org/3/library/venv.html)
-### [Python](https://www.python.org/) - [virtualenv](https://virtualenv.pypa.io/en/stable/index.html)
-### [Anaconda](https://www.anaconda.com/) - [Conda](https://docs.conda.io/)
-
 ## [Packages](https://packaging.python.org/en/latest/tutorials/installing-packages/)
 
 ### [Package Management](<../package_management/index.md>) 
@@ -84,6 +79,8 @@ markmap:
 #### [Jupyter Notebook](https://jupyter-notebook.readthedocs.io/en/latest/)
 #### [Jupyter Lab](https://jupyterlab.readthedocs.io/en/stable/)
 #### [Jupyter Widgets](https://ipywidgets.readthedocs.io/en/stable/)
+
+### [Jupyter](https://docs.jupyter.org/en/latest/)
 
 ## [Terminal](python_pip_terminal.md)
 
