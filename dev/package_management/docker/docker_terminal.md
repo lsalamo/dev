@@ -133,7 +133,6 @@ Docker Hub es un servicio proporcionado por Docker para encontrar y compartir im
 ```bash
 # Login into Docker 
 docker login -u [username] 
-docker login -u lsalamo 
 
 # Sube una image a Docker Hub (Registry)
 docker push <username>/<image_name> 
