@@ -7,9 +7,16 @@ markmap:
 
 # <img src='https://i.imgur.com/fgOBRO6.png' style='height:60px;width:auto'> [Docker](https://www.docker.com/)
 
-## [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+## Tools
+### [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+### Extensions - [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
+### Extensions - [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
-## Registry - [Docker Hub](https://hub.docker.com/)
+## Registry 
+### [Docker Hub](https://hub.docker.com/)
+### [GitHub Container Registry](https://hub.docker.com/)
+### [Azure Container Registry](https://hub.docker.com/)
+### [Generic Registry V2](https://hub.docker.com/)
 
 ## Contenedorización y Orquestación
 ### [Docker Compose](docker_compose.md)

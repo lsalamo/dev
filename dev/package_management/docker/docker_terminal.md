@@ -16,9 +16,9 @@ Doker Daemon: Se ejecuta en el host y gestiona las imágenes y los contenedores 
 
 Docker Registry: Servicio que almacena y distribuye imágenes de Docker. Docker Hub es el registro público más común, pero se pueden configurar registros privados.
 
-![alt text](architecture.png)
+![alt text](img/architecture.png)
 
-## DOCKER HELP
+## GENERAL COMMANDS
 
 ```bash
 # Check the system Docker version
@@ -40,99 +40,14 @@ docker run --help
 docker info
 ```
 
-## DOCKER RUN
-
-Run crea y ejecuta un nuevo contenedor desde una imagen
-
- 1. El Docker client se puso en contacto con el Docker daemon.
- 2. El Docker daemon extrajo la imagen "hello-world" del Docker Hub (arm64v8)
- 3. El Docker Hub creó un nuevo contenedor a partir de esa imagen que ejecuta el archivo ejecutable que produce la salida que estás leyendo en este momento.
- 4. El Docker Hub transmitió esa salida al cliente Docker, que la envió a su terminal.
-
-```bash
-# Ejecutar un contenedor simple:
-docker run hello-world
-```
-
-## DOCKER BUILD
-
-```bash
-# Construye una imagen desde un Dockerfile
-docker build -t <nombre_imagen> .
-```
-
-dockerfile
-
-```bash
-# Usar la imagen oficial de Python como base
-FROM python:3.9
-
-# Establecer el directorio de trabajo en /app
-WORKDIR /app
-
-# Copiar requirements.txt
-COPY requirements.txt .
-
-# Instalar las dependencias
-RUN pip install --no-cache-dir -r requirements.txt
-
-# Copiar el resto del código de la aplicación
-COPY . .
-
-# Exponer el puerto en el que la aplicación escucha
-EXPOSE 5000
-
-# Comando para ejecutar la aplicación
-CMD ["python", "app.py"]
-```
-
-## DOCKER PULL
-
-```bash
-# Descarga una images desde registry
-docker pull [OPTIONS] NAME[:TAG|@DIGEST]
-```
-
-## DOCKER PUSH
-
-```bash
-# Sube una image a registry
-docker push [OPTIONS] NAME[:TAG]
-```
-
 ## DOCKER EXEC
 
 ```bash
 # Ejecuta un comando en un contenedor en ejecución.
 docker exec [OPTIONS] NAME[:TAG]
-```
 
-## DOCKER CONTAINERS
-
-Un container es una instancia en tiempo de ejecución de una Docker Image
-
-```bash
-# Listar contenedores activos:
-docker ps
-# Listar todos los contenedores (incluyendo los detenidos):
-docker ps -a
-docker ps -a | grep hello
-
-# Detener un contenedor:
-docker start [container_id]
-docker start 8eb592582d53
-
-# Detener un contenedor:
-docker stop [container_id]
-docker stop 8eb592582d53
-
-# Eliminar un contenedor:
-docker rm [container_id]
-docker rm 8eb592582d53
-
-# Log de un contenedor:
-docker logs [container_id]
-docker logs 8eb592582d53
+# Passing Environment Variables into a Docker Container
+docker exec -e TEST=sammy [container-name] env
 ```
 
 ## DOCKER IMAGES
@@ -140,6 +55,10 @@ docker logs 8eb592582d53
 Son plantillas de solo lectura usadas para crear contenedores. Pueden ser construidas desde un Dockerfile.
 
 ```bash
+# Construye una imagen desde un Dockerfile
+docker build -t [image_name] [project_docker]
+docker build -t test-image-1 ./dev/package_management/docker/example 
+
 # Listar imágenes:
 docker images
 docker images | grep hello 
@@ -150,3 +69,121 @@ docker rmi ee301c921b8a
 docker rmi —force ee301c921b8a 
 ```
 
+## DOCKER CONTAINERS
+
+Un container es una instancia en tiempo de ejecución de una Docker Image
+
+```bash
+# Crea y ejecuta un nuevo contenedor desde una imagen
+docker run [image_name]
+docker run hello-world # Docker Hub
+docker run test-image-1 # local image
+docker run -d test-image-1 # run in background
+
+# Crea y ejecuta un nuevo contenedor desde una imagen con un nombre personalizado
+docker run --name [container_name] [image_name]
+docker run -p [host_port]:[container_name] [image_name]
+docker run --name test-container-1 test-image-1
+
+# Listar contenedores activos
+docker ps
+> CONTAINER ID   IMAGE                        COMMAND               CREATED       STATUS       PORTS                    NAMES
+> e6d7359fc485   docker_compose_example-web   "flask run --debug"   3 hours ago   Up 2 hours   0.0.0.0:8000->5000/tcp   docker_compose_example-web-1
+
+# Listar todos los contenedores (incluyendo los detenidos)
+docker ps -a
+docker ps -a | grep hello
+
+# Detener un contenedor
+docker start [container_id]
+docker start test-container-1 
+docker start f68ebe135f70dc408658746b92827484b73ef9380d396f8357bdab0ffdbbbec5
+
+# Detener un contenedor
+docker stop [container_id]
+docker stop test-container-1 
+docker stop f68ebe135f70dc408658746b92827484b73ef9380d396f8357bdab0ffdbbbec5
+
+# Eliminar un contenedor
+docker rm [container_id]
+docker rm test-container-1 
+docker rm f68ebe135f70dc408658746b92827484b73ef9380d396f8357bdab0ffdbbbec5
+
+# Log de un contenedor
+docker logs [container_id]
+docker logs test-container-1 
+docker logs f68ebe135f70dc408658746b92827484b73ef9380d396f8357bdab0ffdbbbec5
+
+# Abrir un shell dentro de un Docker Container en ejecución
+docker exec -it [container_id] sh 
+docker exec -it test-container-1 sh 
+
+# Ver estadísticas de uso de recursos
+docker container stats
+
+# Inspeccionar un contenedor en ejecución
+docker inspect [container_id]
+docker inspect test-containter-1 
+```
+
+## [DOCKER HUB](https://hub.docker.com/)
+
+Docker Hub es un servicio proporcionado por Docker para encontrar y compartir imágenes de contenedores con su equipo. 
+
+```bash
+# Login into Docker 
+docker login -u [username] 
+docker login -u lsalamo # pwd: dckr_pat_eIs6q45RaFyeijXFTy4sUbc5tYw
+
+# Sube una image a Docker Hub (Registry)
+docker push <username>/<image_name> 
+
+# Search Hub for an image 
+docker search <image_name> 
+
+# Descarga una images desde Docker Hub (Registry)
+docker pull <image_name>
+```
+
+![alt text](img/vscode.png)
+
+## [DOCKER COMPOSE](https://docs.docker.com/compose/)
+
+Es una herramienta para definir y ejecutar aplicaciones Docker multicontenedor. Permite configurar la infraestructura de una aplicación a través de un archivo YAML (docker-compose.yml)
+
+- No es ideal para entornos de producción a gran escala
+- No proporciona características avanzadas de orquestación como autoescalado o autoreparación.
+
+```bash
+# Check the system Docker Compose version
+ docker compose version 
+> Docker Compose version v2.27.1-desktop.1
+
+# List running compose containers
+docker compose ls
+> NAME                     STATUS              CONFIG FILES
+> docker_compose_example   running(1)          /Users/luis.salamo/Documents/github/dev/docker_compose_example/compose.yaml
+
+# Create and start containers
+docker compose up
+
+# Stop and remove containers, networks
+docker compose down
+
+# List of envrionments variables
+env
+echo $FLASK_APP
+```
+
+## [DOCKER SWARM](https://docs.docker.com/engine/swarm/)
+
+Docker Swarm es una herramienta de orquestación de contenedores desarrollada por Docker. Permite crear y gestionar un clúster de nodos Docker (máquinas / host docker), coordinando los contenedores a través de estos nodos para lograr alta disponibilidad, escalabilidad y equilibrio de carga.
+
+- Integración con Docker: Docker Swarm está completamente integrado con Docker, lo que facilita su uso si ya se está utilizando Docker
+- Simplicidad: Es más fácil de configurar y gestionar en comparación con Kubernetes.
+- Despliegue rápido: Permite desplegar servicios rápidamente con comandos Docker conocidos.
+- Menos funciones avanzadas: Comparado con Kubernetes, Docker Swarm tiene menos características avanzadas y es menos flexible.
+- Comunidad más pequeña: Menor soporte y comunidad en comparación con Kubernetes.
+- Escalabilidad limitada: Menos efectivo en entornos muy grandes y complejos.
+
+![alt text](img/docker_swarm_architecture.png)
