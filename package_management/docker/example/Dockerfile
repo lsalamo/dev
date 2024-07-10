@@ -1,5 +1,6 @@
 # syntax=docker/dockerfile:1
 # Use the official Python image from the Docker Hub
+# image: pythom + tag: 3.9-slim (https://hub.docker.com/_/python)
 FROM python:3.9-slim
 # Set the working directory in the container
 WORKDIR /app
@@ -15,4 +16,5 @@ EXPOSE 5000
 # Copy files code into the container
 COPY . . 
 # Run the Flask app
+# CMD [ "python", "./your-daemon-or-script.py" ]
 CMD ["flask", "run", "--debug"]

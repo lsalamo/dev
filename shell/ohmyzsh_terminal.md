@@ -36,6 +36,26 @@ source ~/.zshrc
 ### PLUGINS
 #### GIT
 
+#### TREE
+
+
+```bash
+brew install tree
+tree -L 2
+> .
+> ├── docker_terminal.md
+> ├── example
+> │   ├── Dockerfile
+> │   ├── app
+> │   ├── compose.yaml
+> │   └── requirements.txt
+> ├── img
+> │   ├── architecture.png
+> │   ├── docker_swarm_architecture.png
+> │   └── vscode.png
+> └── index.md
+```
+
 ### [THEMES](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes)
 * [agnoster/agnoster-zsh-theme](https://github.com/agnoster/agnoster-zsh-theme)
     * [Powerline Fonts](https://github.com/powerline/fonts)

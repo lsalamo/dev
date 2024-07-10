@@ -130,6 +130,11 @@ docker inspect test-containter-1
 
 Docker Hub es un servicio proporcionado por Docker para encontrar y compartir imágenes de contenedores con su equipo. 
 
+### LINKS
+- [Docker Official Images](https://hub.docker.com/search?image_filter=official) - Imágenes más seguras y confiables en Docker Hub
+- [Verified Publisher](https://hub.docker.com/search?image_filter=store) - Imágenes de alta calidad publicadas y mantenidas por las organizaciones asociadas con Docker
+- [Docker Sponsored Open Source](https://hub.docker.com/search?image_filter=open_source) - Son publicados y mantenidos por proyectos de código abierto patrocinados por Docker
+
 ```bash
 # Login into Docker 
 docker login -u [username] 
@@ -144,6 +149,12 @@ docker search <image_name>
 # Descarga una images desde Docker Hub (Registry)
 docker pull <image_name>
 ```
+### IMAGES VARIANTS
+
+- **python:\<version>**: Si no está seguro de cuáles son sus necesidades, probablemente desee utilizar este. Está diseñado para usarse como contenedor desechable
+- **python:\<version>-slim**: Esta imagen no contiene los paquetes comunes de Debian contenidos en la etiqueta predeterminada y solo contiene los paquetes mínimos de Debian necesarios para ejecutar Python.
+- **python:\<version>-alpine**: Esta imagen está basada en el popular [Alpine Linux project](https://alpinelinux.org/), disponible en la la [Alpine official image](https://hub.docker.com/_/alpine). Alpine Linux es mucho más pequeño que la mayoría de las imágenes base de distribución (~5 MB) y, por lo tanto, genera imágenes mucho más delgadas en general.
+- **python:\<version>-windowsservercore**: Solo funciona en lugares como Windows 10 Professional/Enterprise (Edición de aniversario) o Windows Server 2016.
 
 ![alt text](img/vscode.png)
 
