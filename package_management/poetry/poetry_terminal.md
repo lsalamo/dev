@@ -96,9 +96,9 @@ poetry new example
 > └── README.md
 
 # Si desea nombrar su proyecto de manera diferente a la carpeta, puede pasar la opción --name:
-poetry new example --name dev
+poetry new example --name poetry_src
 > example
-> ├── dev
+> ├── poetry_src
 > │   └── __init__.py
 > ├── tests
 > │   └── __init__.py
@@ -107,11 +107,22 @@ poetry new example --name dev
 ```
 ### INSTALL
 
-Instala todas las dependencias listadas en pyproject.toml.
+Lee el archivo **pyproject.toml** del proyecto actual, resuelve las dependencias y las instala.
+
+Si no hay ningún archivo **poetry.lock**, Poetry creará uno después de la resolución de la dependencia
 
 ```bash
 poetry install
+> example
+> ├── poetry_src
+> │   └── __init__.py
+> ├── tests
+> │   └── __init__.py
+> ├── poetry.lock
+> ├── pyproject.toml
+> └── README.md
 ```
+
 output
 
 ```text
@@ -129,11 +140,24 @@ Package operations: 5 installs, 0 updates, 0 removals
 Installing the current project: dev (0.1.0)
 ```
 
+### UPDATE
+
+Para obtener las últimas versiones de las dependencias y actualizar el archivo **poetry.lock**, debe usar el comando de actualización
+
+```bash
+poetry update
+```
+
 ### CONFIGURATION
+
+El comando config le permite editar repositorios y configuraciones de poetry.
 
 ```bash
 # Poetry configuration
 poetry config --list
+
+# set variable "virtualenvs.in-project" equal a "true"
+poetry config virtualenvs.in-project true
 ```
 
 output
@@ -183,6 +207,15 @@ ADD VIRTUAL ENVIRONMENT IN PROJECT
 ```bash
 poetry config virtualenvs.in-project true
 poetry install
+> example
+> ├── .venv
+> ├── poetry_src
+> │   └── __init__.py
+> ├── tests
+> │   └── __init__.py
+> ├── poetry.lock
+> ├── pyproject.toml
+> └── README.md
 ```
 
 output
@@ -248,24 +281,49 @@ Construye un package del proyecto. La carpeta por defecto es "dist"
 
 ```bash
 poetry build
-> Building dev-python (0.1.0)
->   - Building sdist
->   - Built dev_python-0.1.0.tar.gz
->   - Building wheel
->   - Built dev_python-0.1.0-py3-none-any.whl
+> example
+> ├── .venv
+> ├── poetry_src
+> │   └── __init__.py
+> ├── dist
+> │   ├── poetry_src-0.1.0-py3-none-any.whl
+> │   └── poetry_src-0.1.0.tar.gz
+> ├── tests
+> │   └── __init__.py
+> ├── poetry.lock
+> ├── pyproject.toml
+> └── README.md
 ```
+
+output
+
+```text
+Building poetry_src (0.1.0)
+  - Building sdist
+  - Built poetry_src-0.1.0.tar.gz
+  - Building wheel
+  - Built poetry_src-0.1.0-py3-none-any.whl
+```
+
+### PUBLISH
 
 Para publicar su biblioteca, deberá [configurar correctamente sus credenciales de PyPI](https://python-poetry.org/docs/repositories/#configuring-credentials), ya que Poetry publicará la biblioteca en PyPI de forma predeterminada.
 
-pwd: pypi-AgEIcHlwaS5vcmcCJDIyZWJiNmZjLTVkN2ItNDVkNy05M2Y3LTAxZmY2NzY3OTk2ZAACKlszLCIwMTg2YTc3YS0yYzMzLTQyY2EtYmM0MC1mYTk5NDU0NDdmYzYiXQAABiBKbN77OWoy8RXtDFomq2vDGWn8MC99Ld-NSKd_WWDIHQ
-
 ```bash
 # Add new token (Perfil > Configuración de cuenta > Fichas de API > Añadir Ficha de API )
-poetry config pypi-token.pypi <my-token>
+poetry config pypi-token.pypi [my-token]
+poetry config pypi-token.pypi pypi-AgEIcHlwaS5vcmcCJDIyZWJiNmZjLTVkN2ItNDVkNy05M2Y3LTAxZmY2NzY3OTk2ZAACKlszLCIwMTg2YTc3YS0yYzMzLTQyY2EtYmM0MC1mYTk5NDU0NDdmYzYiXQAABiBKbN77OWoy8RXtDFomq2vDGWn8MC99Ld-NSKd_WWDIHQ
 
-# Abre una nueva shell en el entorno virtual del proyecto.
+# Publica el paquete, previamente creado con el comando build, en el repositorio remoto.
 poetry publish
-> Publishing dev-python (0.1.0) to PyPI
->  - Uploading dev_python-0.1.0-py3-none-any.whl 100%
->  - Uploading dev_python-0.1.0.tar.gz 100%
 ```
+
+output
+
+```text
+Publishing poetry_src (0.1.0) to PyPI
+ - Uploading poetry_src-0.1.0-py3-none-any.whl 100%
+ - Uploading poetry_src-0.1.0.tar.gz 100%
+```
+
+![alt text](img/poetry_publish.png)

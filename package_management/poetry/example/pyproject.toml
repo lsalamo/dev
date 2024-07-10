@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "dev"
+name = "poetry_src"
 version = "0.1.0"
 description = "poetry example"
 authors = ["luis salamo <lsalamo@gmail.com>"]
