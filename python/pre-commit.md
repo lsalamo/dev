@@ -3,7 +3,6 @@
 Los scripts de Git Hook son útiles para identificar problemas simples antes de enviarlos a la revisión del código.
 
 Ejecutamos nuestros enlaces en cada confirmación para señalar automáticamente problemas en el código, como puntos y coma faltantes, espacios en blanco al final y declaraciones de depuración.
-test
 
 ## LINKS
 
