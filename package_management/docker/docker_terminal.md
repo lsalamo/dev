@@ -1,6 +1,6 @@
 # [DOCKER](https://www.docker.com/)
 
-Docker es una plataforma de software que permite a los desarrolladores crear, desplegar y ejecutar aplicaciones en contenedores. 
+Docker es una plataforma de software que permite a los desarrolladores crear, desplegar y ejecutar aplicaciones en contenedores.
 
 **Consistencia en el Entorno**: Asegura que la aplicación funcione de la misma manera en el entorno de desarrollo, pruebas y producción.
 
@@ -26,10 +26,10 @@ docker --version
 > Docker version 20.10.22, build 3a2c30b
 
 # Check the system Docker Compose version
-docker compose version 
+docker compose version
 > Docker Compose version v2.27.1-desktop.1
 
-# help 
+# help
 docker --help
 docker --help | grep image
 
@@ -57,16 +57,16 @@ Son plantillas de solo lectura usadas para crear contenedores. Pueden ser constr
 ```bash
 # Construye una imagen desde un Dockerfile
 docker build -t [image_name] [project_docker]
-docker build -t test-image-1 ./dev/package_management/docker/example 
+docker build -t test-image-1 ./dev/package_management/docker/example
 
 # Listar imágenes:
 docker images
-docker images | grep hello 
+docker images | grep hello
 
 # Eliminar un contenedor:
 docker rmi [image_id]
-docker rmi ee301c921b8a 
-docker rmi —force ee301c921b8a 
+docker rmi ee301c921b8a
+docker rmi —force ee301c921b8a
 ```
 
 ## DOCKER CONTAINERS
@@ -96,39 +96,39 @@ docker ps -a | grep hello
 
 # Detener un contenedor
 docker start [container_id]
-docker start test-container-1 
+docker start test-container-1
 docker start f68ebe135f70dc408658746b92827484b73ef9380d396f8357bdab0ffdbbbec5
 
 # Detener un contenedor
 docker stop [container_id]
-docker stop test-container-1 
+docker stop test-container-1
 docker stop f68ebe135f70dc408658746b92827484b73ef9380d396f8357bdab0ffdbbbec5
 
 # Eliminar un contenedor
 docker rm [container_id]
-docker rm test-container-1 
+docker rm test-container-1
 docker rm f68ebe135f70dc408658746b92827484b73ef9380d396f8357bdab0ffdbbbec5
 
 # Log de un contenedor
 docker logs [container_id]
-docker logs test-container-1 
+docker logs test-container-1
 docker logs f68ebe135f70dc408658746b92827484b73ef9380d396f8357bdab0ffdbbbec5
 
 # Abrir un shell dentro de un Docker Container en ejecución
-docker exec -it [container_id] sh 
-docker exec -it test-container-1 sh 
+docker exec -it [container_id] sh
+docker exec -it test-container-1 sh
 
 # Ver estadísticas de uso de recursos
 docker container stats
 
 # Inspeccionar un contenedor en ejecución
 docker inspect [container_id]
-docker inspect test-containter-1 
+docker inspect test-containter-1
 ```
 
 ## [DOCKER HUB](https://hub.docker.com/)
 
-Docker Hub es un servicio proporcionado por Docker para encontrar y compartir imágenes de contenedores con su equipo. 
+Docker Hub es un servicio proporcionado por Docker para encontrar y compartir imágenes de contenedores con su equipo.
 
 ### LINKS
 - [Docker Official Images](https://hub.docker.com/search?image_filter=official) - Imágenes más seguras y confiables en Docker Hub
@@ -136,15 +136,15 @@ Docker Hub es un servicio proporcionado por Docker para encontrar y compartir im
 - [Docker Sponsored Open Source](https://hub.docker.com/search?image_filter=open_source) - Son publicados y mantenidos por proyectos de código abierto patrocinados por Docker
 
 ```bash
-# Login into Docker 
-docker login -u [username] 
-docker login -u lsalamo 
+# Login into Docker
+docker login -u [username]
+docker login -u lsalamo
 
 # Sube una image a Docker Hub (Registry)
-docker push <username>/<image_name> 
+docker push <username>/<image_name>
 
-# Search Hub for an image 
-docker search <image_name> 
+# Search Hub for an image
+docker search <image_name>
 
 # Descarga una images desde Docker Hub (Registry)
 docker pull <image_name>
@@ -167,7 +167,7 @@ Es una herramienta para definir y ejecutar aplicaciones Docker multicontenedor. 
 
 ```bash
 # Check the system Docker Compose version
- docker compose version 
+ docker compose version
 > Docker Compose version v2.27.1-desktop.1
 
 # List running compose containers

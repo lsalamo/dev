@@ -7,24 +7,24 @@ markmap:
 
 # <img src='https://i.imgur.com/5WuXRVs.png' style='height:40px;width:auto'> Package Management
 
-## [Homebrew](https://brew.sh/) - [Terminal](./brew/brew_terminal.md) - Gestor de paquetes para macOS (y Linux)
+## Sistema operativo
 
-## [PipX](https://pipx.pypa.io/stable/) - [Terminal](./pipx/pipx_terminal.md)- Install and Run Python Applications in Isolated Environments
+### [Homebrew](./brew/brew_terminal.md) - Gestor de paquetes para macOS y Linux
 
-## Small / Medium projects
+## [Python Packaging](https://packaging.python.org)
 
-### [Python](https://www.python.org/)
-#### [venv](https://docs.python.org/3/library/venv.html)
-#### [virtualenv](https://virtualenv.pypa.io/en/stable/index.html)
-#### [Package Installer for Python (pip)](https://pip.pypa.io/) - You can use pip to install packages from PyPI and other indexes
+### [pip (Package Installer for Python)](./pip/pip_terminal.md) - La herramienta más popular para instalar paquetes de Python. Proporciona las funciones principales esenciales para buscar, descargar e instalar paquetes desde PyPI y otros índices de paquetes de Python.
 ##### [Python Package Index (PyPI)](https://pypi.org/)
 
-### [Anaconda](/dev/anaconda/index.md)
+### [pipX](./pipx/pipx_terminal.md)- Instalar y ejecutar aplicaciones de línea de comandos de Python sin causar conflictos de dependencia con otros paquetes instalados en el sistema.
 
-## Complex projects
+### [Conda](./conda/conda.md)
 
-### [Python](https://www.python.org/)
-#### [Poetry](https://python-poetry.org/) - [Terminal](./poetry/poetry_terminal.md)
+## [Managing Applications Dependencies](https://packaging.python.org/en/latest/tutorials/managing-dependencies/)
+
+### [Pipenv](./pipenv/pipenv.md)
+
+### [Poetry](./poetry/poetry_terminal.md)
 
 ## Contenedorización y Orquestación
 ### [Docker](./docker/index.md): Plataforma que permite crear, desplegar y ejecutar aplicaciones en contenedores.
@@ -37,5 +37,3 @@ markmap:
 ### Microsoft Azure
 ### Google Cloud Platform (GCP)
 ### IBM Cloud
-
-

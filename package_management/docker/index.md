@@ -12,7 +12,7 @@ markmap:
 ### Extensions - [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
 ### Extensions - [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
-## Registry 
+## Registry
 ### [Docker Hub](https://hub.docker.com/)
 ### [GitHub Container Registry](https://hub.docker.com/)
 ### [Azure Container Registry](https://hub.docker.com/)
@@ -30,5 +30,3 @@ markmap:
 ### [Docker Swarm](https://docs.docker.com/engine/swarm/)
 
 ## [Terminal](docker_terminal.md)
-
-

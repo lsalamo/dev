@@ -13,7 +13,7 @@ echo $ZSH
 zsh --version
 > zsh 5.8 (x86_64-apple-darwin21.0)
 
-# add plugin autocomplete 
+# add plugin autocomplete
 # añadir al fichero config ~/.zshrc > plugins=(git zsh-autosuggestions)
 > git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
@@ -21,7 +21,7 @@ zsh --version
 ## establecer como predeterminado
 
 ```bash
-# Abre el archivo .zshrc 
+# Abre el archivo .zshrc
 nano ~/.zshrc
 
 # Cambia el valor a tu tema preferido. Por ejemplo, para usar el tema "agnoster"

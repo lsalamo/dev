@@ -1,0 +1,5 @@
+# Distribution / packaging
+# dist/
+
+# created by virtualenv automatically
+.venv

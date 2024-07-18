@@ -1,6 +1,27 @@
+
+- [POETRY](https://python-poetry.org/)
+  * [LINKS](#links)
+  * [INSTALLATION](https://python-poetry.org/docs/#installation)
+  * [BASIC COMMANDS](https://python-poetry.org/docs/cli/)
+    + [INIT](#init)
+    + [NEW](#new)
+    + [INSTALL](#install)
+    + [UPDATE](#update)
+    + [CONFIGURATION](#configuration)
+    + [ENVIRONMENTS](https://python-poetry.org/docs/managing-environments/)
+    + [SHOW](#show)
+    + [BUILD](#build)
+    + [PUBLISH](#publish)
+
 # [POETRY](https://python-poetry.org/)
 
-Poetry es una herramienta de gestión de dependencias y empaquetado para proyectos de Python. Está diseñada para simplificar el proceso de configuración, instalación y actualización de dependencias, así como para facilitar la creación y publicación de paquetes Python. 
+Poetry es una herramienta de gestión de dependencias y empaquetado para proyectos de Python. Está diseñada para simplificar el proceso de configuración, instalación y actualización de dependencias, así como para facilitar la creación y publicación de paquetes Python.
+
+## LINKS
+- [Official Website](https://python-poetry.org/)
+- [Documentation](https://python-poetry.org/docs/)
+- [Releases](https://pypi.org/project/poetry/#history)
+- [GitHub](https://github.com/python-poetry/poetry)
 
 ## [INSTALLATION](https://python-poetry.org/docs/#installation)
 
@@ -25,12 +46,12 @@ output
 ```bash
 This command will guide you through creating your pyproject.toml config.
 
-Package name [example]:  poetry_package_example   
+Package name [example]:  poetry_package_example
 Version [0.1.0]:  0.1.0
 Description []:  poetry example
 Author [luis-salamo <luis.salamo@adevinta.com>, n to skip]:  luis salamo <lsalamo@gmail.com>
-License []:  
-Compatible Python versions [^3.12]:  
+License []:
+Compatible Python versions [^3.12]:
 
 Would you like to define your main dependencies interactively? (yes/no) [yes] yes
 You can specify a package in the following forms:
@@ -53,12 +74,12 @@ Enter package # to add, or the complete package name if it is not listed []:
  [ 7] chibi-requests
  [ 8] cloud-requests
  [ 9] crawl-requests
- [ 10] 
+ [ 10]
  > 0
-Enter the version constraint to require (or leave blank to use the latest version): 
+Enter the version constraint to require (or leave blank to use the latest version):
 Using version ^2.32.3 for requests
 
-Add a package (leave blank to skip): 
+Add a package (leave blank to skip):
 
 Would you like to define your development dependencies interactively? (yes/no) [yes] no
 Generated file

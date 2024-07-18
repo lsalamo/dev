@@ -14,7 +14,7 @@ RUN pip install -r requirements.txt
 # Expose port 5000 for the Flask app
 EXPOSE 5000
 # Copy files code into the container
-COPY . . 
+COPY . .
 # Run the Flask app
 # CMD [ "python", "./your-daemon-or-script.py" ]
 CMD ["flask", "run", "--debug"]

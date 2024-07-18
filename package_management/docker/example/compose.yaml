@@ -5,4 +5,3 @@ services:
     # Asigna el puerto 8000 del host al puerto 5000 del contenedor.
     ports:
       - "8000:5000"
-      

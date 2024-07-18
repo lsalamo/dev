@@ -13,7 +13,7 @@ markmap:
 
 ### <img src='https://i.imgur.com/C09ElkR.png' style='height:40px;width:auto'> [PyCharm Professional (Paid)](https://www.jetbrains.com/pycharm/)
 
-### <img src='https://i.imgur.com/xDZoLSE.png' style='height:40px;width:auto'> [DataGrip (Database)](https://www.jetbrains.com/datagrip/) 
+### <img src='https://i.imgur.com/xDZoLSE.png' style='height:40px;width:auto'> [DataGrip (Database)](https://www.jetbrains.com/datagrip/)
 
 ## Plugins & Services
 
@@ -30,8 +30,3 @@ markmap:
 #### [Configure a Python interpreter](https://www.jetbrains.com/help/pycharm/configuring-python-interpreter.html)
 ##### [conda environment](https://www.jetbrains.com/help/pycharm/conda-support-creating-conda-virtual-environment.html)
 #### [PyCharm Professional vs PyCharm Community Edition](https://www.jetbrains.com/products/compare/?product=pycharm&product=pycharm-ce)
-
-
-
-
-

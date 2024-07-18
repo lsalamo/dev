@@ -1,6 +1,6 @@
-# [PIPX](https://pipx.pypa.io/stable/)
+# [PIPX](https://pipx.pypa.io/stable/) - [PyPI](https://pypi.org/project/pipx/)
 
-Es una herramienta para instalar y ejecutar aplicaciones Python en entornos aislados. 
+Es una herramienta para instalar y ejecutar aplicaciones Python en entornos aislados.
 
 Crea entornos virtuales para cada aplicación, evitando conflictos de dependencias y garantizando un entorno limpio para cada aplicación. Esto significa que no entran en conflicto con otros paquetes instalados en su sistema.
 
@@ -42,7 +42,7 @@ pipx reinstall-all
 pipx install pycowsay
 pipx install black
 
-# List programs installed > 2 venvs created   
+# List programs installed > 2 venvs created
 pipx list
 > venvs are in /Users/luis.salamo/.local/pipx/venvs
 > apps are exposed on your $PATH at /Users/luis.salamo/.local/bin
