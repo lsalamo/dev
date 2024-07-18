@@ -16,7 +16,7 @@ pre-commit --version
 # you can generate a very basic configuration
 pre-commit sample-config
 
-# Install the git hook scripts 
+# Install the git hook scripts
 pre-commit install
 
 # (optional) Run against all the files
