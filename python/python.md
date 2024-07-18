@@ -38,7 +38,7 @@ markmap:
 
 ### [Numpy](https://numpy.org/)
 
-### [Git - Pre-commit](https://pre-commit.com/)
+### [Git - Pre-commit](./pre-commit.md)
 
 ### [Data Visualization](https://pyviz.org/)
 
