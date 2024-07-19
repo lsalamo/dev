@@ -28,6 +28,7 @@ Poetry es una herramienta de gestión de dependencias y empaquetado para proyect
 ## LINKS
 - [Official Website](https://python-poetry.org/)
 - [Documentation](https://python-poetry.org/docs/)
+- [Commands](https://python-poetry.org/docs/cli/)
 - [Releases](https://pypi.org/project/poetry/#history)
 - [GitHub](https://github.com/python-poetry/poetry)
 

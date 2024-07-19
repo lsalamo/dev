@@ -6,7 +6,7 @@
   - [venv](#venv)
   - [virtualenv](#virtualenv)
   - [Create the environment from the requirements.txt file](#create-the-environment-from-the-requirementstxt-file)
-- [INSTALL PACKAGES](#install-packages)
+- [PACKAGES](#packages)
 - [VARIABLES](#variables)
 
 <!--TOC-->
@@ -115,7 +115,7 @@ Este comando captura todas las dependencias instaladas y sus versiones exactas e
 
 Es una buena práctica ejecutar el comando pip freeze para actualizar el archivo **requirements.txt** cada vez que instalas una nueva dependencia o actualizas una existente en tu entorno de desarrollo
 
-## INSTALL PACKAGES
+## PACKAGES
 
 LINKS
 
@@ -159,5 +159,4 @@ env
 # 3. Storing Environment Variables in Dockerfile
 
 # Unset the environment variable
-conda env config vars unset my_var -n [env_name]
 ```
