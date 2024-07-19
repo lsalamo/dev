@@ -7,6 +7,8 @@ Ejecutamos nuestros enlaces en cada confirmación para señalar automáticamente
 ## LINKS
 
 - [Official Website](https://pre-commit.com/)
+- [PyPI](https://pypi.org/project/pre-commit/)
+
 
 ```bash
 # Check version
@@ -22,3 +24,4 @@ pre-commit install
 # (optional) Run against all the files
 pre-commit run --all-files
 ```
+

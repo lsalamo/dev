@@ -1,19 +1,27 @@
-
-- [POETRY](https://python-poetry.org/)
-  * [LINKS](#links)
-  * [INSTALLATION](https://python-poetry.org/docs/#installation)
-  * [BASIC COMMANDS](https://python-poetry.org/docs/cli/)
-    + [INIT](#init)
-    + [NEW](#new)
-    + [INSTALL](#install)
-    + [UPDATE](#update)
-    + [CONFIGURATION](#configuration)
-    + [ENVIRONMENTS](https://python-poetry.org/docs/managing-environments/)
-    + [SHOW](#show)
-    + [BUILD](#build)
-    + [PUBLISH](#publish)
-
 # [POETRY](https://python-poetry.org/)
+
+<!--TOC-->
+
+- [LINKS](#links)
+- [INSTALLATION](#installation)
+- [BASIC COMMANDS](#basic-commands)
+  - [init](#init)
+  - [new](#new)
+  - [install](#install)
+  - [update](#update)
+  - [configuration](#configuration)
+  - [environments](#environments)
+  - [show](#show)
+  - [add](#add)
+  - [remove](#remove)
+  - [run](#run)
+  - [shell](#shell)
+  - [build](#build)
+  - [publish](#publish)
+
+<!--TOC-->
+
+---
 
 Poetry es una herramienta de gestión de dependencias y empaquetado para proyectos de Python. Está diseñada para simplificar el proceso de configuración, instalación y actualización de dependencias, así como para facilitar la creación y publicación de paquetes Python.
 
@@ -23,15 +31,15 @@ Poetry es una herramienta de gestión de dependencias y empaquetado para proyect
 - [Releases](https://pypi.org/project/poetry/#history)
 - [GitHub](https://github.com/python-poetry/poetry)
 
-## [INSTALLATION](https://python-poetry.org/docs/#installation)
+## INSTALLATION
 
 ```bash
 curl -sSL https://install.python-poetry.org | python3 -
 ```
 
-## [BASIC COMMANDS](https://python-poetry.org/docs/cli/)
+## BASIC COMMANDS
 
-### INIT
+### init
 
 Inicia un nuevo proyecto de Poetry en el directorio actual. Esto crea un archivo **pyproject.toml**, donde se definirán todas las dependencias y configuraciones del proyecto.
 
@@ -101,7 +109,7 @@ build-backend = "poetry.core.masonry.api"
 
 Do you confirm generation? (yes/no) [yes] yes
 ```
-### NEW
+### new
 
 Crea un nuevo proyecto en un directorio específico, configurando automáticamente el archivo pyproject.toml.
 
@@ -126,7 +134,7 @@ poetry new example --name poetry_src
 > ├── pyproject.toml
 > └── README.md
 ```
-### INSTALL
+### install
 
 Lee el archivo **pyproject.toml** del proyecto actual, resuelve las dependencias y las instala.
 
@@ -161,7 +169,7 @@ Package operations: 5 installs, 0 updates, 0 removals
 Installing the current project: dev (0.1.0)
 ```
 
-### UPDATE
+### update
 
 Para obtener las últimas versiones de las dependencias y actualizar el archivo **poetry.lock**, debe usar el comando de actualización
 
@@ -169,23 +177,20 @@ Para obtener las últimas versiones de las dependencias y actualizar el archivo 
 poetry update
 ```
 
-### CONFIGURATION
+### configuration
 
 El comando config le permite editar repositorios y configuraciones de poetry.
 
 ```bash
 # Poetry configuration
 poetry config --list
-
-# set variable "virtualenvs.in-project" equal a "true"
-poetry config virtualenvs.in-project true
 ```
 
 output
 
 ![alt text](img/poetry_config.png)
 
-### [ENVIRONMENTS](https://python-poetry.org/docs/managing-environments/)
+### environments
 
 ```bash
 poetry env info
@@ -212,9 +217,8 @@ Path:       /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3
 Executable: /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/bin/python3.12
 ```
 
-DELETING ENVIRONMENTS
-
 ```bash
+# deleting environments
 poetry env remove /full/path/to/python
 poetry env remove python3.7
 poetry env remove 3.7
@@ -223,9 +227,8 @@ poetry env remove test-O3eWbxRl-py3.7
 poetry env remove --all
 ```
 
-ADD VIRTUAL ENVIRONMENT IN PROJECT
-
 ```bash
+# add virtual environment in project
 poetry config virtualenvs.in-project true
 poetry install
 > example
@@ -247,7 +250,7 @@ Creating virtualenv dev in /Users/luis.salamo/Documents/github/dev/package_manag
 
 ![alt text](img/poetry_env.png)
 
-### SHOW
+### show
 
 Lista todas las dependencias del proyecto, junto con sus versiones.
 
@@ -265,10 +268,11 @@ requests           2.32.3   Python HTTP for Humans.
 urllib3            2.2.2    HTTP library with thread-safe connection pooling, file pos...
 ```
 
-![alt text](img/poetry_install.png)
+### add
+
+Añade una nueva dependencia al proyecto y la instala. También actualiza pyproject.toml automáticamente.
 
 ```bash
-# Añade una nueva dependencia al proyecto y la instala. También actualiza pyproject.toml automáticamente.
 poetry add [package_name]
 poetry add requests
 > Using version ^2.32.3 for requests
@@ -278,11 +282,18 @@ poetry add requests
 >  - Installing idna (3.7)
 >  - Installing urllib3 (2.2.1)
 >  - Installing requests (2.32.3)
+```
 
-# Elimina una dependencia del proyecto y actualiza pyproject.toml.
+### remove
+
+Elimina una dependencia del proyecto y actualiza pyproject.toml.
+
+```bash
 poetry remove [package_name]
 poetry remove requests
 ```
+
+### run
 
 ```bash
 # Ejecutar un Comando en un Entorno Virtual
@@ -290,13 +301,15 @@ poetry run [package_name] [args]
 poetry run python package_management/poetry/test_hola_mundo.py
 ```
 
+### shell
+
 ```bash
 # Abre una nueva shell en el entorno virtual del proyecto.
 poetry shell
 ```
 ![](img/poetry_shell.png)
 
-### BUILD
+### build
 
 Construye un package del proyecto. La carpeta por defecto es "dist"
 
@@ -326,7 +339,7 @@ Building poetry_src (0.1.0)
   - Built poetry_src-0.1.0-py3-none-any.whl
 ```
 
-### PUBLISH
+### publish
 
 Para publicar su biblioteca, deberá [configurar correctamente sus credenciales de PyPI](https://python-poetry.org/docs/repositories/#configuring-credentials), ya que Poetry publicará la biblioteca en PyPI de forma predeterminada.
 

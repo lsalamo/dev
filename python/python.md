@@ -38,8 +38,6 @@ markmap:
 
 ### [Numpy](https://numpy.org/)
 
-### [Git - Pre-commit](./pre-commit.md)
-
 ### [Data Visualization](https://pyviz.org/)
 
 #### [Matplotlib](https://matplotlib.org/)

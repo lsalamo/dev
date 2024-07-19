@@ -47,4 +47,9 @@ markmap:
 
 ### [Atlassian](https://www.atlassian.com/es/git)
 
+## Resources
+
+### [pre-commit](pre-commit.md)
+#### [markdown-toc-creator](https://pypi.org/project/markdown-toc-creator/)
+
 ## [Terminal](https://docs.google.com/document/d/17oId5AsjgG7z6uwF-5XJNysQXLn5VD5ZP2M5iKwauY8/edit?usp=drive_link)

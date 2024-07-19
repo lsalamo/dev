@@ -1,5 +1,18 @@
 # [PACKAGE INSTALLER FOR PYTHON (PIP)](https://pip.pypa.io/) - [PyPI](https://pypi.org/project/pip/)
 
+<!--TOC-->
+
+- [VIRTUAL ENVIRONMENTS](#virtual-environments)
+  - [venv](#venv)
+  - [virtualenv](#virtualenv)
+  - [Create the environment from the requirements.txt file](#create-the-environment-from-the-requirementstxt-file)
+- [INSTALL PACKAGES](#install-packages)
+- [VARIABLES](#variables)
+
+<!--TOC-->
+
+---
+
 La herramienta más popular para instalar paquetes de Python y la que se incluye con las versiones modernas de Python.
 - Proporciona las funciones principales esenciales para buscar, descargar e instalar paquetes desde [PyPI](https://pypi.org/) y otros índices de paquetes de Python.
 - Gestiona dependencias, asegurando que todas las dependencias necesarias para un paquete estén instaladas
@@ -22,7 +35,12 @@ python3 -m pip install --upgrade pip setuptools wheel
 
 ## VIRTUAL ENVIRONMENTS
 
-### [USING VENV](https://docs.python.org/3/library/venv.html)
+### venv
+
+Está disponible de forma predeterminada en Python 3.3 y posteriores, e instala pip en entornos virtuales creados en Python 3.4 y posteriores.
+
+LINKS
+- [Python Documentation](https://docs.python.org/3/library/venv.html)
 
 ```bash
 # Create virtual environment
@@ -36,9 +54,12 @@ source .venv/bin/activate
 deactivate
 ```
 
-### [USING VIRTUALENV](https://virtualenv.pypa.io/en/stable/index.html) - [PyPI](https://pypi.org/project/virtualenv/)
+### virtualenv
 
 Es una biblioteca que ofrece más funcionalidades que venv.Aunque puedes crear un entorno virtual usando venv con Python3, se recomienda que instales y use virtualenv en su lugar.
+
+LINKS
+- [Python packages virtualenv](https://virtualenv.pypa.io/en/stable/index.html) - [PyPI](https://pypi.org/project/virtualenv/)
 
 pip, [Setuptools](https://packaging.python.org/en/latest/key_projects/#setuptools) y [wheel](https://packaging.python.org/en/latest/key_projects/#wheel) siempre se instalan en entornos virtuales creados de forma predeterminada.
 
@@ -94,26 +115,12 @@ Este comando captura todas las dependencias instaladas y sus versiones exactas e
 
 Es una buena práctica ejecutar el comando pip freeze para actualizar el archivo **requirements.txt** cada vez que instalas una nueva dependencia o actualizas una existente en tu entorno de desarrollo
 
-## VARIABLES
+## INSTALL PACKAGES
 
-[Medium.com > Three Different Ways to Store Environment Variables](https://medium.com/@dataproducts/python-three-different-ways-to-store-environment-variables-15224952f31b)
+LINKS
 
-```bash
-# List any variables you may have
-env
-
-# Set environment variables
-# 1. Use .env File to Store Environment Variables
-# 2. Store Environment Variables in Virtual Environment
-# 3. Storing Environment Variables in Dockerfile
-
-# Unset the environment variable
-conda env config vars unset my_var -n [env_name]
-```
-
-## [INSTALL PACKAGES](https://packaging.python.org/en/latest/tutorials/installing-packages)
-
-The most common usage of pip is to install from the [Python Package Index (PyPI)](https://pypi.org/)
+- [Installing Packages](https://packaging.python.org/en/latest/tutorials/installing-packages)
+- [Python Package Index (PyPI)](https://pypi.org/)
 
 ```bash
 # Install package_name to latest version
@@ -133,4 +140,24 @@ pip list | grep python
 
 # Show information about package
 pip show [package_name]
+```
+
+## VARIABLES
+
+
+LINKS
+
+- [Medium.com > Three Different Ways to Store Environment Variables](https://medium.com/@dataproducts/python-three-different-ways-to-store-environment-variables-15224952f31b)
+
+```bash
+# List any variables you may have
+env
+
+# Set environment variables
+# 1. Use .env File to Store Environment Variables
+# 2. Store Environment Variables in Virtual Environment
+# 3. Storing Environment Variables in Dockerfile
+
+# Unset the environment variable
+conda env config vars unset my_var -n [env_name]
 ```
