@@ -6,7 +6,7 @@
 - [INSTALATION](#instalation)
   - [1. ensurepip](#1-ensurepip)
   - [2. get-pip.py](#2-get-pippy)
-  - [3. Actualice su pip ejecutando:](#3-actualice-su-pip-ejecutando)
+  - [3. Actualice su pip ejecutando](#3-actualice-su-pip-ejecutando)
 - [VIRTUAL ENVIRONMENTS](#virtual-environments)
   - [venv](#venv)
   - [virtualenv](#virtualenv)
@@ -71,7 +71,7 @@ Este es un script de Python que utiliza cierta lógica de arranque para instalar
 ```bash
 python get-pip.py
 ```
-### 3. Actualice su pip ejecutando:
+### 3. Actualice su pip ejecutando
 
 ```bash
 # Ensure pip, setuptools, and wheel are up to date
