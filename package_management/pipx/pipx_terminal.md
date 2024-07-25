@@ -4,6 +4,10 @@ Es una herramienta para instalar y ejecutar aplicaciones Python en entornos aisl
 
 Crea entornos virtuales para cada aplicación, evitando conflictos de dependencias y garantizando un entorno limpio para cada aplicación. Esto significa que no entran en conflicto con otros paquetes instalados en su sistema.
 
+LINKS
+
+- [Installing stand alone command line tools](https://packaging.python.org/en/latest/guides/installing-stand-alone-command-line-tools/)
+
 ## INSTALLATION
 
 ```bash

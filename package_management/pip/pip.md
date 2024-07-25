@@ -1,12 +1,18 @@
-# [PACKAGE INSTALLER FOR PYTHON (PIP)](https://pip.pypa.io/) - [PyPI](https://pypi.org/project/pip/)
+# [PACKAGE INSTALLER FOR PYTHON (PIP)](https://pip.pypa.io/)
 
 <!--TOC-->
 
+- [LINKS](#links)
+- [INSTALATION](#instalation)
+  - [1. ensurepip](#1-ensurepip)
+  - [2. get-pip.py](#2-get-pippy)
+  - [3. Actualice su pip ejecutando:](#3-actualice-su-pip-ejecutando)
 - [VIRTUAL ENVIRONMENTS](#virtual-environments)
   - [venv](#venv)
   - [virtualenv](#virtualenv)
   - [Create the environment from the requirements.txt file](#create-the-environment-from-the-requirementstxt-file)
 - [PACKAGES](#packages)
+  - [pip.install](#pipinstall)
 - [VARIABLES](#variables)
 
 <!--TOC-->
@@ -28,9 +34,43 @@ python --version
 pip --version 
 python -m pip --version
 > pip 23.3.1 from /opt/anaconda3/lib/python3.11/site-packages/pip (python 3.11)
+```
 
+## LINKS
+- [Official Website](https://pip.pypa.io/)
+- [Documentation](https://pip.pypa.io/en/stable/getting-started/)
+- [PyPI](https://pypi.org/project/pip/)
+- [Commands](https://pip.pypa.io/en/stable/cli/)
+- [Releases](https://pip.pypa.io/en/stable/news/)
+
+## INSTALATION
+
+Si su entorno Python no tiene pip instalado, existen 2 mecanismos para instalar pip respaldados directamente por los mantenedores de pip
+
+### 1. ensurepip
+
+Python viene con un módulo ensurepip, que puede instalar pip en un entorno Python.
+
+```bash
+python -m ensurepip --upgrade
+```
+
+### 2. get-pip.py
+
+Este es un script de Python que utiliza cierta lógica de arranque para instalar pip.
+
+- Descargue el script desde https://bootstrap.pypa.io/get-pip.py. 
+- Abra una terminal/símbolo del sistema, vaya a la carpeta que contiene el archivo get-pip.py y ejecute:
+
+```bash
+python get-pip.py
+```
+### 3. Actualice su pip ejecutando:
+
+```bash
 # Ensure pip, setuptools, and wheel are up to date
 python3 -m pip install --upgrade pip setuptools wheel
+python -m pip install --upgrade pip
 ```
 
 ## VIRTUAL ENVIRONMENTS
@@ -41,6 +81,7 @@ Está disponible de forma predeterminada en Python 3.3 y posteriores, e instala 
 
 LINKS
 - [Python Documentation](https://docs.python.org/3/library/venv.html)
+- [Install packages in a virtual environment using pip and venv](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/)
 
 ```bash
 # Create virtual environment
@@ -52,6 +93,10 @@ source .venv/bin/activate
 
 # Desactivate virtual environment
 deactivate
+
+# To confirm the virtual environment is activated, check the location of your Python interprete
+which python
+> /Users/luis.salamo/Documents/github/dev/pip/example/.venv/bin/python
 ```
 
 ### virtualenv
@@ -60,6 +105,7 @@ Es una biblioteca que ofrece más funcionalidades que venv.Aunque puedes crear u
 
 LINKS
 - [Python packages virtualenv](https://virtualenv.pypa.io/en/stable/index.html) - [PyPI](https://pypi.org/project/virtualenv/)
+- [Installing packages using virtualenv](https://packaging.python.org/en/latest/guides/installing-using-virtualenv/)
 
 pip, [Setuptools](https://packaging.python.org/en/latest/key_projects/#setuptools) y [wheel](https://packaging.python.org/en/latest/key_projects/#wheel) siempre se instalan en entornos virtuales creados de forma predeterminada.
 
@@ -109,6 +155,7 @@ Después de instalar las dependencias usando pip, ejecuta el siguiente comando e
 ```bash
 # Registrar nuestras dependencias en el archivo requirements.txt
 pip freeze > requirements.txt
+python3 -m pip freeze
 ```
 
 Este comando captura todas las dependencias instaladas y sus versiones exactas en un archivo **requirements.txt**. Puedes incluir este archivo en tu repositorio para que otros desarrolladores puedan replicar el entorno.
@@ -116,6 +163,8 @@ Este comando captura todas las dependencias instaladas y sus versiones exactas e
 Es una buena práctica ejecutar el comando pip freeze para actualizar el archivo **requirements.txt** cada vez que instalas una nueva dependencia o actualizas una existente en tu entorno de desarrollo
 
 ## PACKAGES
+
+### pip.install
 
 LINKS
 
@@ -128,6 +177,18 @@ python3 -m pip install [package_name]
 
 # Install package_name to v5.0
 python3 -m pip install [package_name]=5.0.0
+python3 -m pip install 'requests==2.18.4'
+# To install the latest 2.x release of requests
+python3 -m pip install 'requests>=2.0.0,<3.0.0'
+# Install from local archives
+python3 -m pip install requests-2.18.4.tar.gz
+# Install from GIT (VCS)
+python3 -m pip install -e SomeProject @ git+https://git.repo/some_pkg.git          # from git
+python3 -m pip install -e SomeProject @ git+https://git.repo/some_pkg.git@feature  # from a branch
+# Si tiene un directorio que contiene archivos de múltiples paquetes, puede decirle a pip que busque paquetes allí y que no use el índice de paquetes de Python (PyPI) en absoluto
+python3 -m pip install --no-index --find-links=/local/dir/ [package_name]
+# Install from other package indexes
+python3 -m pip install --index-url http://index.example.com/simple/ [package_name]
 
 # Upgrade an already installed SomeProject to the latest from PyPI.
 python3 -m pip install --upgrade [package_name]
