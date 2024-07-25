@@ -11,8 +11,13 @@
   - [venv](#venv)
   - [virtualenv](#virtualenv)
   - [Create the environment from the requirements.txt file](#create-the-environment-from-the-requirementstxt-file)
+  - [pip freeze](#pip-freeze)
 - [PACKAGES](#packages)
-  - [pip.install](#pipinstall)
+  - [pip install](#pip-install)
+  - [pip uninstall](#pip-uninstall)
+  - [pip list](#pip-list)
+  - [pip show](#pip-show)
+  - [pip search](#pip-search)
 - [VARIABLES](#variables)
 
 <!--TOC-->
@@ -37,6 +42,7 @@ python -m pip --version
 ```
 
 ## LINKS
+
 - [Official Website](https://pip.pypa.io/)
 - [Documentation](https://pip.pypa.io/en/stable/getting-started/)
 - [PyPI](https://pypi.org/project/pip/)
@@ -79,8 +85,7 @@ python -m pip install --upgrade pip
 
 Está disponible de forma predeterminada en Python 3.3 y posteriores, e instala pip en entornos virtuales creados en Python 3.4 y posteriores.
 
-LINKS
-- [Python Documentation](https://docs.python.org/3/library/venv.html)
+- [venv — Creation of virtual environments](https://docs.python.org/3/library/venv.html)
 - [Install packages in a virtual environment using pip and venv](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/)
 
 ```bash
@@ -162,11 +167,24 @@ Este comando captura todas las dependencias instaladas y sus versiones exactas e
 
 Es una buena práctica ejecutar el comando pip freeze para actualizar el archivo **requirements.txt** cada vez que instalas una nueva dependencia o actualizas una existente en tu entorno de desarrollo
 
+### pip freeze
+
+Genere resultados adecuados para un archivo **requirements.txt**.
+
+```bash
+python -m pip freeze
+```
+
+Genere un archivo de **requirements.txt** y luego instálelo en otro entorno
+
+```bash
+env1/bin/python -m pip freeze > requirements.txt
+env2/bin/python -m pip install -r requirements.txt
+```
+
 ## PACKAGES
 
-### pip.install
-
-LINKS
+### pip install
 
 - [Installing Packages](https://packaging.python.org/en/latest/tutorials/installing-packages)
 - [Python Package Index (PyPI)](https://pypi.org/)
@@ -192,32 +210,62 @@ python3 -m pip install --index-url http://index.example.com/simple/ [package_nam
 
 # Upgrade an already installed SomeProject to the latest from PyPI.
 python3 -m pip install --upgrade [package_name]
+```
 
+### pip uninstall
+
+```bash
+python -m pip uninstall [package_name]
+```
+
+### pip list
+
+```bash
 # List packages installed
 pip list
+python -m pip list
 
 # List packages installed "python"
 pip list | grep python
 
-# Show information about package
+# El formato json genera un campo editable_project_location adicional.
+python -m pip list --format=json | python -m json.tool
+```
+
+### pip show
+
+```bash
+# Muestra información sobre uno o más paquetes instalados.
 pip show [package_name]
+python -m pip show sphinx
+
+# Mostrar toda la información sobre un paquete
+python -m pip show --verbose sphinx
+```
+
+### pip search
+
+```bash
+# Busque paquetes PyPI cuyo nombre o resumen contenga <consulta>
+python -m pip search peppercorn
+> pepperedform    - Helpers for using peppercorn with formprocess.
+> peppercorn      - A library for converting a token stream into [...]
 ```
 
 ## VARIABLES
-
 
 LINKS
 
 - [Medium.com > Three Different Ways to Store Environment Variables](https://medium.com/@dataproducts/python-three-different-ways-to-store-environment-variables-15224952f31b)
 
-```bash
+```text
 # List any variables you may have
 env
 
 # Set environment variables
-# 1. Use .env File to Store Environment Variables
-# 2. Store Environment Variables in Virtual Environment
-# 3. Storing Environment Variables in Dockerfile
+1. Use .env File to Store Environment Variables
+2. Store Environment Variables in Virtual Environment
+3. Storing Environment Variables in Dockerfile
 
 # Unset the environment variable
 ```
