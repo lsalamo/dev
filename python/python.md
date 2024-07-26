@@ -51,7 +51,7 @@ markmap:
 ##### [hvPlot](https://hvplot.holoviz.org/)
 ##### [Pandas Bokeh](https://github.com/PatrikHlobil/Pandas-Bokeh)
 
-### [Machine Learning - Forecasting](../machine_learning/forecasting/index.md)
+### [Machine Learning](data_science/data_science.md)
 
 ## Tools
 ### [Pandas Tutor](https://pandastutor.com/) - Visualizes how Python code transforms dataframes

@@ -1,8 +1,88 @@
-# MACHINE LEARNING
+# DATA SCIENCE
 
-![alt text](../image.png)
+<!--TOC-->
 
-## [TENSORFLOW & KERAS](https://www.tensorflow.org/)
+- [MACHINE LEARNING](#machine-learning)
+  - [1. TensorFlow](#1-tensorflow)
+  - [2. Scikit-Learn](#2-scikit-learn)
+  - [3. PyTorch](#3-pytorch)
+  - [4. Keras](#4-keras)
+  - [5. XGBoost](#5-xgboost)
+- [MATHEMATICS AND STATISTICS](#mathematics-and-statistics)
+  - [1. SciPy](#1-scipy)
+  - [2. NumPy](#2-numpy)
+  - [3. Natural Language Tookit (NLTK)](#3-natural-language-tookit-nltk)
+  - [4. Statsmodels (SM)](#4-statsmodels-sm)
+- [FORECASTING](#forecasting)
+  - [[Tensorflow](https://www.tensorflow.org/)](#tensorflowhttpswwwtensorfloworg)
+  - [[StatsModels (SM)](https://www.statsmodels.org/stable/index.html)](#statsmodels-smhttpswwwstatsmodelsorgstableindexhtml)
+  - [[Facebook - Prophet](https://facebook.github.io/prophet/)](#facebook---prophethttpsfacebookgithubioprophet)
+
+<!--TOC-->
+
+---
+
+## MACHINE LEARNING
+
+### 1. TensorFlow
+[TensorFlow](https://www.tensorflow.org/) es una plataforma de código abierto de extremo a extremo para el aprendizaje automático.
+### 2. Scikit-Learn
+[Scikit-learn](https://scikit-learn.org/stable/) es una de las bibliotecas de machine learning más utilizadas en Python. 
+- Construido sobre NumPy, SciPy y Matplotlib
+- Es una herramienta sencilla y eficiente para tareas de análisis de datos predictivos.
+- Links
+    - [Datacamp > Python Machine Learning: Scikit-Learn Tutorial](https://www.datacamp.com/tutorial/machine-learning-python)
+
+```bash
+# Install package
+pip install scikit-learn
+```
+
+Ejemplo básico de uso
+
+```python
+from sklearn.linear_model import LinearRegression
+import numpy as np
+
+# Crear datos de ejemplo
+X = np.array(range(100)).reshape(-1, 1)
+y = np.array(range(100))
+
+# Ajustar el modelo
+model = LinearRegression()
+model.fit(X, y)
+
+# Hacer un pronóstico
+X_future = np.array(range(100, 110)).reshape(-1, 1)
+forecast = model.predict(X_future)
+print(forecast)
+```
+
+### 3. PyTorch
+Marco de aprendizaje profundo.
+### 4. Keras
+[Keras](https://keras.io/) es una API de redes neuronales de alto nivel, que se ejecuta sobre TensorFlow.
+
+Tus modelos se ejecutan más rápido gracias a la compilación XLA con JAX y TensorFlow, y son más fáciles de implementar en todas las superficies gracias a los componentes de servicio de los ecosistemas TensorFlow y PyTorch
+
+### 5. XGBoost
+Librería optimizada de gradient boosting distribuido.
+
+## MATHEMATICS AND STATISTICS
+
+### 1. SciPy
+Biblioteca utilizada para la computación científica y técnica.
+### 2. NumPy
+[NumPy](https://numpy.org/) es una de las bibliotecas de Python de código abierto más utilizadas y se utiliza principalmente para computación científica.
+### 3. Natural Language Tookit (NLTK)
+[NLTK](https://www.nltk.org/) is a leading platform for building Python programs to work with human language data
+Librería de matemática simbólica.
+### 4. Statsmodels (SM)
+Como se mencionó anteriormente, también se utiliza para el modelado estadístico.
+
+## FORECASTING
+
+### [Tensorflow](https://www.tensorflow.org/)
 
 TensorFlow y Keras son bibliotecas de aprendizaje profundo que pueden ser utilizadas para construir modelos de redes neuronales para pronósticos más complejos.
 
@@ -85,8 +165,7 @@ plt.legend()
 plt.show()
 ```
 
-
-## [STATSMODELS](https://www.statsmodels.org/stable/index.html)
+### [StatsModels (SM)](https://www.statsmodels.org/stable/index.html)
 
 Statsmodels es una biblioteca para la estimación de modelos estadísticos y la realización de pruebas estadísticas. Es muy útil para el análisis de series temporales y el pronóstico.
 
@@ -154,14 +233,13 @@ plt.legend()
 plt.show()
 ```
 
-## [FACEBOOK-PROPHET](https://facebook.github.io/prophet/)
+### [Facebook - Prophet](https://facebook.github.io/prophet/)
 
-Prophet es una herramienta desarrollada por Facebook para realizar pronósticos en series temporales. Es especialmente útil para datos con tendencias y estacionalidades fuertes.
-
-### LINKS
-
-* [Medium.com > Forecasting in Python with Facebook Prophet](https://towardsdatascience.com/forecasting-in-python-with-facebook-prophet-29810eb57e66)
-* [Medium.com > Forecasting con Prophet](https://medium.com/@angel.r.chicote/forecasting-con-prophet-7fb36b25eb4b)
+Prophet es una herramienta desarrollada por Facebook para realizar pronósticos en series temporales. 
+- Es especialmente útil para datos con tendencias y estacionalidades fuertes.
+- Links
+    * [Medium.com > Forecasting in Python with Facebook Prophet](https://towardsdatascience.com/forecasting-in-python-with-facebook-prophet-29810eb57e66)
+    * [Medium.com > Forecasting con Prophet](https://medium.com/@angel.r.chicote/forecasting-con-prophet-7fb36b25eb4b)
 
 
 ```bash
@@ -221,31 +299,3 @@ plt.show()
 fig2 = model.plot_components(forecast)
 ```
 
-## [SCIKIT-LEARN](https://scikit-learn.org/stable/)
-
-scikit-learn es una biblioteca de aprendizaje automático en Python que incluye varias herramientas para el pronóstico, aunque no está enfocada específicamente en series temporales. Se puede utilizar en combinación con otras bibliotecas.
-
-```bash
-# Install package
-pip install scikit-learn
-```
-
-Ejemplo básico de uso
-
-```python
-from sklearn.linear_model import LinearRegression
-import numpy as np
-
-# Crear datos de ejemplo
-X = np.array(range(100)).reshape(-1, 1)
-y = np.array(range(100))
-
-# Ajustar el modelo
-model = LinearRegression()
-model.fit(X, y)
-
-# Hacer un pronóstico
-X_future = np.array(range(100, 110)).reshape(-1, 1)
-forecast = model.predict(X_future)
-print(forecast)
-```
