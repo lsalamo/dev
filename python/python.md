@@ -11,6 +11,14 @@ markmap:
 
 ## [IDEs](https://docs.anaconda.com/free/working-with-conda/ide-tutorials/)
 
+### [Cursor](https://www.cursor.com/) - The AI Code Editor
+
+### [JetBrains - PyCharm Professional (Paid)](https://www.jetbrains.com/pycharm/)
+
+### [Microsoft - Visual Studio Code (VS Code)](../meta/index.md)
+
+### [Google - Colab](https://colab.research.google.com/) - Launch a live python notebooks
+
 ### [Jupyter](https://jupyter.org/)
 #### [Jupyter Notebook - (The Classic Notebook Interface)](https://jupyter.org/)
 #### [Jupyter Lab - (A Next-Generation Notebook Interface)](https://jupyter.org/try-jupyter/lab/)
@@ -20,54 +28,64 @@ markmap:
 
 #### [Binder](https://mybinder.org/) - Launch a live python notebooks from GitHub
 
-### [JetBrains](https://www.jetbrains.com/) - [PyCharm Professional (Paid)](https://www.jetbrains.com/pycharm/)
-
-### [Microsoft - Visual Studio Code (VS Code)](../meta/index.md)
-
-### Google - [Colab](https://colab.research.google.com/) - Launch a live python notebooks
-
 ### [Spyder](https://www.spyder-ide.org/)
 
 ### [Atom](https://atom-editor.cc/)
 
-## [Packages](https://packaging.python.org/en/latest/tutorials/installing-packages/)
+## [Package Management](package_management/package_management_markmap.md)
 
-### [Package Management](<../package_management/index.md>) 
+## Data Science
 
-### [Pandas](https://pandas.pydata.org/)
+### [Data Manipulation and analysis](data_science/data_manipulation_and_analysis/data_manipulation_and_analysis.md)
+### [Mathematics and statistics](ddata_science/mathematics_and_statistics/mathematics_and_statistics.md)
+### [Machine Learning](data_science/machine_learning/machine_learning.md)
+### [Forecasting](data_science/forecasting/forecasting.md)
+### [Database](data_science/database/database.md)
 
-### [Numpy](https://numpy.org/)
+## [Data Visualization](https://pyviz.org/)
 
-### [Data Visualization](https://pyviz.org/)
+### [Matplotlib](https://matplotlib.org/)
+#### [Pandas](https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html)
+#### [Seaborn](https://seaborn.pydata.org/)
+#### [Xarray](https://docs.xarray.dev/en/stable/user-guide/plotting.html) 
 
-#### [Matplotlib](https://matplotlib.org/)
-##### [Pandas](https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html)
-##### [Seaborn](https://seaborn.pydata.org/)
-##### [Xarray](https://docs.xarray.dev/en/stable/user-guide/plotting.html) 
+### [Plotly](https://plotly.com/python/plotly-express/)
 
-#### [Plotly](https://plotly.com/python/plotly-express/)
+### [Bokeh](https://docs.bokeh.org/en/latest/)
+#### [hvPlot](https://hvplot.holoviz.org/)
+#### [Pandas Bokeh](https://github.com/PatrikHlobil/Pandas-Bokeh)
 
-#### [Bokeh](https://docs.bokeh.org/en/latest/)
-##### [hvPlot](https://hvplot.holoviz.org/)
-##### [Pandas Bokeh](https://github.com/PatrikHlobil/Pandas-Bokeh)
-
-### [Machine Learning](data_science/data_science.md)
-
-## Tools
-### [Pandas Tutor](https://pandastutor.com/) - Visualizes how Python code transforms dataframes
-### [Streamlit](https://streamlit.io/) - Turns data scripts into shareable web apps in minutes
+## Databases
+### [Qstudio](https://github.com/timeseries/qstudio)
 
 ## Learning
+
+### Courses
+#### [Cognitive Class](https://cognitiveclass.ai/) - Python course with certification
+##### [Data Science with Python](https://cognitiveclass.ai/learn/data-science-with-python)
+
 ### Python
-#### [A Whirlwind Tour of Python](https://github.com/jakevdp/WhirlwindTourOfPython)
+#### [Book - The Hitchhiker’s Guide to Python!](https://docs.python-guide.org/)
+#### [Book - A Whirlwind Tour of Python](https://github.com/jakevdp/WhirlwindTourOfPython)
+#### [OverAPI.com](https://overapi.com/python)
+#### [Python Tutor](https://pythontutor.com/) - Visual Debugger
+#### [Pandas Tutor](https://pandastutor.com/) - Visualizes how Python code transforms dataframes
+#### [El Libro De Python](https://ellibrodepython.com/)
 #### [Aprende Python (español)](https://aprendepython.es/)
+#### [Python For Everybody](https://www.py4e.com/lessons)
+#### [Código Espinoza](https://www.youtube.com/@codigoespinoza)
+#### [Asabeneh - 30 Days Of Python](https://github.com/Asabeneh/30-Days-Of-Python)
+#### [pamoroso - Free Python Books](https://github.com/pamoroso/free-python-books)
+#### [Code Combat](https://codecombat.com/) - Aprende a Programar a Través del Poder del Juego
+
 ### Data Science
-#### [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook)
-#### [Python for Data Science (python4DS)](https://aeturrell.github.io/python4DS/welcome.html)
+#### [Book - Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook)
+#### [Book - Python for Data Science (python4DS)](https://aeturrell.github.io/python4DS/welcome.html)
 #### [Data Science Scoop](https://github.com/datasciencescoop?tab=repositories)
-### Machine Learning
-#### [Scikit Learn](https://scikit-learn.org/stable/)
-### [Kaggle](https://www.kaggle.com/learn)
+#### [Kaggle](https://www.kaggle.com/learn)
+
+## Tools
+### [Streamlit](https://streamlit.io/) - Turns data scripts into shareable web apps in minutes
 
 ## Help
 
@@ -79,8 +97,6 @@ markmap:
 #### [Jupyter Notebook](https://jupyter-notebook.readthedocs.io/en/latest/)
 #### [Jupyter Lab](https://jupyterlab.readthedocs.io/en/stable/)
 #### [Jupyter Widgets](https://ipywidgets.readthedocs.io/en/stable/)
-
-### [Jupyter](https://docs.jupyter.org/en/latest/)
 
 ## [Terminal](python_pip_terminal.md)
 
