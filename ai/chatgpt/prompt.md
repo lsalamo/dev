@@ -1,0 +1,1 @@
+Escribe una secuencia de comandos para automatizar el envío de informes diarios por correo electrónico en Python y enséñame el proceso para configurarlo.

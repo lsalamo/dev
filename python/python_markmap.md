@@ -2,7 +2,7 @@
 markmap:
   maxWidth: 300
   colorFreezeLevel: 2
-  initialExpandLevel: 3
+  initialExpandLevel: 4
 ---
 
 # <img src='https://i.imgur.com/5WuXRVs.png' style='height:40px;width:auto'> [Python](https://www.python.org/)
@@ -14,8 +14,11 @@ markmap:
 ### [Cursor](https://www.cursor.com/) - The AI Code Editor
 
 ### [JetBrains - PyCharm Professional (Paid)](https://www.jetbrains.com/pycharm/)
+#### [Extensions](https://plugins.jetbrains.com/pycharm)
 
 ### [Microsoft - Visual Studio Code (VS Code)](../meta/index.md)
+#### [Extensions](https://marketplace.visualstudio.com/)
+##### [Markmap](https://marketplace.visualstudio.com/items?itemName=gera2ld.markmap-vscode)
 
 ### [Google - Colab](https://colab.research.google.com/) - Launch a live python notebooks
 
@@ -63,6 +66,8 @@ markmap:
 ### Courses
 #### [Cognitive Class](https://cognitiveclass.ai/) - Python course with certification
 ##### [Data Science with Python](https://cognitiveclass.ai/learn/data-science-with-python)
+#### [Great Learning](https://www.mygreatlearning.com/academy) - Free online courses with certificates in AI, ChatGPT and more
+#### [Data Engineering Zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp?tab=readme-ov-file)
 
 ### Python
 #### [Book - The Hitchhiker’s Guide to Python!](https://docs.python-guide.org/)

@@ -14,10 +14,6 @@ markmap:
 ### IDEs
 
 #### <img src='https://i.imgur.com/SVEqnbl.png' style='height:40px;width:auto'> [Visual Studio Code (VS Code)](https://code.visualstudio.com/)
-##### [Extensions](https://marketplace.visualstudio.com/)
-###### [Markmap](https://marketplace.visualstudio.com/items?itemName=gera2ld.markmap-vscode)
-###### [Docker - Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
-###### [Docker - Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
 ### Help
 #### [Visual Studio Code (VS Code)](https://code.visualstudio.com/docs)
