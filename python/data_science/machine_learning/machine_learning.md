@@ -31,12 +31,17 @@ Supervised machine learning consiste en crear modelos que asignan con precisión
 
 El análisis de regresión es una forma de técnica de modelado predictivo que investiga la relación entre una variable dependiente e independiente. Usa la relación entre variables para encontrar la recta de mejor ajuste o la ecuación de regresión que pueda usarse para hacer predicciones.
 
-Este es un problema de regresión donde los datos relacionados con cada empleado representan una **observación (observation)**.
+Documentation
+- [Métricas en regresión](https://medium.com/@nicolasarrioja/m%C3%A9tricas-en-regresi%C3%B3n-5e5d4259430b)
+
+Example
 
 | Independent variables / predictores (x) | Dependent variables / respuestas (y)   | 
 |:------------------------- |:--------------------------|
 | Variables (features) utilizadas para hacer las predicciones | Variables objetivo o de respuesta que intentamos predecir o explicar |
 | **EXAMPLE:** superficie, número de habitaciones, distancia al centro de la ciudad, etc. | **EXAMPLE:** precios de la vivienda | 
+
+Enlaces
 
 #### Simple Linear regression 
 
@@ -161,11 +166,11 @@ Se utiliza cuando la relación entre las variables es no lineal y más compleja.
 
 Un polinomio de grado 2 sería:
 
-$$y = b_{0} + b_{1}x + b_{2}x^{2}$$
+$$y = b_{0} + b_{1}x + b_{2}x^{2} + \epsilon$$
 
 y para un polinomio de grado n:
 
-$$y = b_{0} + b_{1}x + b_{2}x^{2} + \cdots + b_{n}x^{n}$$
+$$y = b_{0} + b_{1}x + b_{2}x^{2} + \cdots + b_{n}x^{n} + \epsilon$$
 
 **sobreajuste (overfitting)**
 
