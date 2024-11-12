@@ -1,10 +1,18 @@
-# PRE-COMMIT
+# GIT
+
+LINKS
+
+-  [20 Git Command-Line Tricks Every Developer Should Know](https://dev.to/jagroop2001/20-git-command-line-tricks-every-developer-should-know-1i21?context=digest)
+
+# PACKAGES
+
+## pre-commit
 
 Los scripts de Git Hook son útiles para identificar problemas simples antes de enviarlos a la revisión del código.
 
 Ejecutamos nuestros enlaces en cada confirmación para señalar automáticamente problemas en el código, como puntos y coma faltantes, espacios en blanco al final y declaraciones de depuración. hola
 
-## LINKS
+LINKS
 
 - [Official Website](https://pre-commit.com/)
 - [PyPI](https://pypi.org/project/pre-commit/)

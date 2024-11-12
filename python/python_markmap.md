@@ -18,7 +18,13 @@ markmap:
 
 ### [Microsoft - Visual Studio Code (VS Code)](../meta/index.md)
 #### [Extensions](https://marketplace.visualstudio.com/)
+##### [Data Science](https://marketplace.visualstudio.com/search?target=VSCode&category=Data%20Science&sortBy=Installs)
+###### [Microsoft - Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+###### [Microsoft - Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
+###### [Microsoft - Jupyter Notebook Renderers](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter-renderers)
+###### [Python Environment Manager](https://marketplace.visualstudio.com/items?itemName=donjayamanne.python-environment-manager)
 ##### [Markmap](https://marketplace.visualstudio.com/items?itemName=gera2ld.markmap-vscode)
+##### [JSON Crack](https://marketplace.visualstudio.com/items?itemName=AykutSarac.jsoncrack-vscode)
 
 ### [Google - Colab](https://colab.research.google.com/) - Launch a live python notebooks
 
@@ -79,8 +85,9 @@ markmap:
 #### [Aprende Python (español)](https://aprendepython.es/)
 #### [Python For Everybody](https://www.py4e.com/lessons)
 #### [Código Espinoza](https://www.youtube.com/@codigoespinoza)
-#### [Asabeneh - 30 Days Of Python](https://github.com/Asabeneh/30-Days-Of-Python)
-#### [pamoroso - Free Python Books](https://github.com/pamoroso/free-python-books)
+#### [mouredev / hello-python](https://github.com/mouredev/hello-python)
+#### [Asabeneh / 30 Days Of Python](https://github.com/Asabeneh/30-Days-Of-Python)
+#### [pamoroso / Free Python Books](https://github.com/pamoroso/free-python-books)
 #### [Code Combat](https://codecombat.com/) - Aprende a Programar a Través del Poder del Juego
 
 ### Data Science

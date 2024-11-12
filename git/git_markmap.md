@@ -22,6 +22,8 @@ markmap:
 ### [Git by example](https://antonz.org/git-by-example/)
 ### [Oh my git!](https://ohmygit.org/)
 ### [Awesome GitHub Profile READMEs](https://zzetao.github.io/awesome-github-profile/)
+### [mouredev / hello-git](https://github.com/mouredev/hello-git)
+### [git-sim](https://github.com/initialcommit-com/git-sim) - Simule visualmente operaciones de Git en sus propios repositorios con un solo comando de terminal
 
 
 ## Help

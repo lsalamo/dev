@@ -8,6 +8,12 @@
     - [Multiple linear regression](#multiple-linear-regression)
     - [Polynomial linear regression](#polynomial-linear-regression)
   - [Classification](#classification)
+    - [Logistic Regression](#logistic-regression)
+    - [Naive Byes](#naive-byes)
+    - [K-Nearest Neighbors](#k-nearest-neighbors)
+    - [Decision Tree](#decision-tree)
+    - [Random Forest Algorithm](#random-forest-algorithm)
+    - [Support Vector Machine (SVC)](#support-vector-machine-svc)
 - [2. Sin supervisión (Unsupervised)](#2-sin-supervisión-unsupervised)
 - [3. Refuerzo (Reinforcement)](#3-refuerzo-reinforcement)
 - [Tools:](#tools)
@@ -197,7 +203,27 @@ El término cuadrático ($150x^{2}$) captura la aceleración en el incremento de
 | 4       | 40.400      |
 | 5       | 43.750      |
 
-### Classification 
+### Classification
+
+Las técnicas de clasificación son una parte esencial de las aplicaciones de aprendizaje automático y minería de datos. Aproximadamente el 70 % de los problemas de ciencia de datos son problemas de clasificación.
+
+#### Logistic Regression
+
+La regresión logística es un método estadístico utilizado para problemas de clasificación binaria, en los que el objetivo es predecir uno de dos resultados, como «yes» o «no», «true» o «false», etc. A diferencia de la regresión lineal, que predice valores continuos, la regresión logística predice la probabilidad de que un punto de entrada determinado pertenezca a una clase concreta.
+
+- Binary Logistic Regression: La variable objetivo sólo tiene dos resultados posibles, como Spam o Not Spam, Cancer o No Cancer.
+- Multinomial Logistic Regression: La variable objetivo tiene tres o más categorías nominales, como predecir el tipo de Vino.
+- Ordinal Logistic Regression: la variable objetivo tiene tres o más categorías ordinales, como la valoración de restaurantes o productos de 1 a 5.
+
+#### Naive Byes
+
+#### K-Nearest Neighbors
+
+#### Decision Tree
+
+#### Random Forest Algorithm
+
+#### Support Vector Machine (SVC)
 
 ## 2. Sin supervisión (Unsupervised)
 
