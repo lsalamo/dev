@@ -1,5 +1,19 @@
 # GIT
 
+<!--TOC-->
+
+- [GITHUB](#github)
+  - [View commits](#view-commits)
+  - [View commit with ID](#view-commit-with-id)
+  - [View history file](#view-history-file)
+  - [View the contents of a file before specific commit](#view-the-contents-of-a-file-before-specific-commit)
+- [PACKAGES](#packages)
+  - [pre-commit](#pre-commit)
+
+<!--TOC-->
+
+---
+
 ## GITHUB
 
 ### View commits
@@ -57,9 +71,9 @@ LINKS
 
 -  [20 Git Command-Line Tricks Every Developer Should Know](https://dev.to/jagroop2001/20-git-command-line-tricks-every-developer-should-know-1i21?context=digest)
 
-# PACKAGES
+## PACKAGES
 
-## pre-commit
+### pre-commit
 
 Los scripts de Git Hook son útiles para identificar problemas simples antes de enviarlos a la revisión del código.
 
