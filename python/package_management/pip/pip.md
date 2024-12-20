@@ -10,6 +10,7 @@
 - [VIRTUAL ENVIRONMENTS](#virtual-environments)
   - [venv](#venv)
   - [virtualenv](#virtualenv)
+  - [Create the environment from interpreter path](#create-the-environment-from-interpreter-path)
   - [Create the environment from the requirements.txt file](#create-the-environment-from-the-requirementstxt-file)
   - [pip freeze](#pip-freeze)
 - [PACKAGES](#packages)
@@ -93,6 +94,9 @@ Está disponible de forma predeterminada en Python 3.3 y posteriores, e instala 
 python3 -m venv [env_name]
 python3 -m venv .venv
 
+# Create virtual environment in path and interpreter specified
+/opt/homebrew/bin/python3 -m venv /Users/luis.salamo/Documents/github/python-training/google/gsheet/.venv
+
 # Activate virtual environment
 source .venv/bin/activate
 
@@ -144,6 +148,16 @@ rm -rf venv
 [Python environments in VS Code](https://code.visualstudio.com/docs/python/environments)
 
 ![alt text](img/vsc_interpreter.png)
+
+### Create the environment from interpreter path
+
+```
+> Select Interpreter > Enter interpreter path > [Type Path interpreter]
+```
+
+Example:
+
+./google/gsheet/.venv
 
 ### Create the environment from the requirements.txt file
 

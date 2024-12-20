@@ -64,9 +64,6 @@ markmap:
 #### [hvPlot](https://hvplot.holoviz.org/)
 #### [Pandas Bokeh](https://github.com/PatrikHlobil/Pandas-Bokeh)
 
-## Databases
-### [Qstudio](https://github.com/timeseries/qstudio)
-
 ## Learning
 
 ### Courses
@@ -78,26 +75,11 @@ markmap:
 ### Python
 #### [Book - The Hitchhiker’s Guide to Python!](https://docs.python-guide.org/)
 #### [Book - A Whirlwind Tour of Python](https://github.com/jakevdp/WhirlwindTourOfPython)
-#### [OverAPI.com](https://overapi.com/python)
-#### [Python Tutor](https://pythontutor.com/) - Visual Debugger
-#### [Pandas Tutor](https://pandastutor.com/) - Visualizes how Python code transforms dataframes
 #### [El Libro De Python](https://ellibrodepython.com/)
 #### [Aprende Python (español)](https://aprendepython.es/)
 #### [Python For Everybody](https://www.py4e.com/lessons)
 #### [Código Espinoza](https://www.youtube.com/@codigoespinoza)
-#### [mouredev / hello-python](https://github.com/mouredev/hello-python)
-#### [Asabeneh / 30 Days Of Python](https://github.com/Asabeneh/30-Days-Of-Python)
-#### [pamoroso / Free Python Books](https://github.com/pamoroso/free-python-books)
 #### [Code Combat](https://codecombat.com/) - Aprende a Programar a Través del Poder del Juego
-
-### Data Science
-#### [Book - Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook)
-#### [Book - Python for Data Science (python4DS)](https://aeturrell.github.io/python4DS/welcome.html)
-#### [Data Science Scoop](https://github.com/datasciencescoop?tab=repositories)
-#### [Kaggle](https://www.kaggle.com/learn)
-
-## Tools
-### [Streamlit](https://streamlit.io/) - Turns data scripts into shareable web apps in minutes
 
 ## Help
 
