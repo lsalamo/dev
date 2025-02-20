@@ -10,10 +10,12 @@
     - [2.2 Data Streams](#22-data-streams)
     - [2.3 Google Signals](#23-google-signals)
     - [2.4 Sessions](#24-sessions)
+    - [2.5 Data Retention](#25-data-retention)
   - [3. Data display](#3-data-display)
     - [3.1 Events](#31-events)
     - [3.2 Dimensions](#32-dimensions)
     - [3.3 User ID](#33-user-id)
+    - [3.4 DebugView](#34-debugview)
 
 <!--TOC-->
 
@@ -181,10 +183,13 @@ El evento scroll o cualquier otro es informado con el parametro "**engagement_ti
 | Se desplaza hacia abajo en la página | scroll | 6677 | 1 |
 | Abandona el sitio web | user_engagement | 7711 | 1 |
 
+#### [2.5 Data Retention](https://support.google.com/analytics/answer/7667196)
+
+> **\> Admin \> Property Settings \> Data collection and modification \> Data retention**
+
 ### 3. Data display
 
 #### 3.1 Events
----
 
 > **\> Admin \> Property Settings \> Data Display \> Events**
 
@@ -192,13 +197,15 @@ El evento scroll o cualquier otro es informado con el parametro "**engagement_ti
 - Analyse: Si se quiere usar estos eventos para analizarlos debemos crear "Custom Events"
 
 Docs
+___
 
 - [Google Drive Luis > Parameters, Dimensions and Metrics](https://docs.google.com/spreadsheets/d/1QlV_FyvvziEg-LXUa_8-Y0_i9y9H7T-a5zc0SG3oaUo/edit?gid=0#gid=0)
 - [ Medium.com > GA4 Measurement Protocol Parameter Reference](https://medium.com/@mssvarma06/ga4-measurement-protocol-parameter-reference-b63d87bbe0eb)
 
 ![alt text](img/ga4/metrics-min.png)
 
-3.1.1 Predefined Metrics
+Predefined Metrics
+___
 
 - [Automatically collected events:](https://support.google.com/analytics/answer/9234069?hl=en&ref_topic=9756175) Son eventos que GA4 se recopilan automáticamente sin ninguna configuración adicional.
     - page_view: Triggered when a user views a page
@@ -224,7 +231,8 @@ Docs
     - add_shipping_info
     - add_payment_info
 
-[3.1.2 Custom Metrics](https://support.google.com/analytics/answer/12229021?hl=en&ref_topic=13367566&sjid=2826369473343199309-EU)
+[Custom Metrics](https://support.google.com/analytics/answer/12229021?hl=en&ref_topic=13367566&sjid=2826369473343199309-EU)
+___
 
 > **\> Admin \> Property Settings \> Data Display \> Custom definitions \> Custom metrics**
 
@@ -234,13 +242,15 @@ Le permite analizar valores numéricos de los parámetros del evento
 - Ad Phone Called
 - Ad Deleted
 
-3.1.3 Calculated Metrics
+Calculated Metrics
+___
 
 > **\> Admin \> Property Settings \> Data Display \> Custom definitions \> Calculated metrics**
 
 Le permite combinar una o más métricas existentes y/o métricas personalizadas para producir una métrica nueva y potencialmente más valiosa.
 
 Limits
+___
 
 | Types of custom dimension   |      Standard property      |  360 property |
 |----------|:-------------:|------:|
@@ -248,6 +258,7 @@ Limits
 | Calculated metrics | 5 | 50 |
 
 Parameters
+___
 
 | Parameter (gtag) | Parameter (ga4) | Description |
 |----------|:-------------|:------|
@@ -265,13 +276,13 @@ Parameters
 
 
 #### 3.2 Dimensions
----
 
 3.2.1 Custom Dimensions
 
 > **\> Admin \> Property Settings \> Data Display \> Custom definitions \> Custom dimensions**
 
 Types
+___
 
 - **User-scoped (100 items)**: para informar de "user properties"
 
@@ -280,6 +291,7 @@ Types
 - **Item-scoped (25 items)**: para informat de "ecommerce parameters"
 
 Steps
+___
 
 1. **Code:** Añades un evento con sus parametros o propiedades de usuario a tu código web o app.
 
@@ -292,6 +304,7 @@ Steps
 > **IMPORTANTE:** La creación de una dimensión personalizada con una gran cantidad de valores únicos puede afectar negativamente a sus informes. 
 
 Limits
+___
 
 | Types of custom dimension   |      Standard property      |  360 property |
 |----------|:-------------:|------:|
@@ -299,15 +312,9 @@ Limits
 | Event-scoped custom dimensions | 50 | 125 |
 | Item-scoped custom dimensions | 10 | 25 |
 
-#### 3.3 User ID
----
+#### [3.3 User ID](https://support.google.com/analytics/answer/10976610)
 
 > **\> Admin \> Property Settings \> Data Display \> Reporting Identity**
-
-Docs
-___
-
-- [Reporting identity](https://support.google.com/analytics/answer/10976610)
 
 Google Analytics mide a los usuarios en distintos dispositivos y plataformas
 
@@ -326,6 +333,10 @@ ___
 - **Device based:** device ID e ignora los otros
 
 ![alt text](img/ga4/reporting_identity.jpg)
+
+#### [3.4 DebugView](https://support.google.com/analytics/answer/7201382)
+
+
 
 
 CONSENT MODE
