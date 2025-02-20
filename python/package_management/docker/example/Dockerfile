@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
 # Use the official Python image from the Docker Hub
 # image: pythom + tag: 3.9-slim (https://hub.docker.com/_/python)
-FROM python:3.9-slim
+FROM python:3.14.0a1-slim
 # Set the working directory in the container
 WORKDIR /app
 # envrionment variables
