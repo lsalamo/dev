@@ -260,6 +260,11 @@ ___
 Parameters
 ___
 
+URL Collect
+```html
+https://region1.google-analytics.com/g/collect
+```
+
 | Parameter (gtag) | Parameter (ga4) | Description |
 |----------|:-------------|:------|
 | tid |  | Measurement ID , identificador del stream para recoger la data |
@@ -273,6 +278,7 @@ ___
 | _ss | session_start event | Session Start, indica que este evento inició una nueva sesión |
 | seg | user_engagement event | Session Engagement, Define si la sesión está activa y tiene alguna interacción o no |
 | _et | engagement_time_msec | Engagement Time, tiempo de interacción |
+| _dbg | debug_mode | Si esta en modo debug |
 
 
 #### 3.2 Dimensions
@@ -321,7 +327,21 @@ Google Analytics mide a los usuarios en distintos dispositivos y plataformas
 - **User-ID:** Identificaciones persistentes para usuarios que iniciaron sesión. Es el más preciso, porque utiliza datos que usted recopila para identificar a sus usuarios.
 > **Example:** sdrn:coches.net:user:12151777
 
+```js
+gtag('get', 'G-6NE7MBSF9K', 'user_id', (user_id) => {
+  console.log('User ID:', user_id);
+});
+
+gtag("set", {user_id: "sdrn:coches.net:user:9560491"})
+```
+
 - **Device ID:** Analytics también puede utilizar el ID del dispositivo como espacio de identidad. En los sitios web, el ID del dispositivo obtiene su valor del "**client ID (first party cookie "_ga")**". En las aplicaciones, el ID del dispositivo es el "**app-instance-ID**".
+
+```js
+gtag('get', 'G-6NE7MBSF9K', 'client_id', (client_id) => {
+  console.log('Client ID:', client_id);
+});
+```
 
 - **Modeling:** GA4 se basa en el aprendizaje automático para modelar los datos del usuario para aquellos usuarios que se niegan a dar su consentimiento para compartir sus datos.
 
@@ -336,7 +356,28 @@ ___
 
 #### [3.4 DebugView](https://support.google.com/analytics/answer/7201382)
 
+Habilite el modo de depuración para uno mismo
+- [Google Tag Assistant](https://tagassistant.google.com/)
+    - [Tag Assistant Chrome Extension](https://chromewebstore.google.com/detail/tag-assistant/kejbdjndbnbjgmefkgdddjlbokphdefk)
+- [Google Tag Manager](https://tagmanager.google.com/) > Preview Mode
 
+![alt text](img/ga4/debug_preview_mode.png)
+
+Habilitar el modo de depuración para todos
+
+- Monitorear todos los eventos
+
+```js
+gtag('config', 'G-HFV6B7LKND', { 'debug_mode':true });
+```
+
+- Monitorear todos un evento
+
+```js
+gtag('event', 'xyz', { 'debug_mode':true });
+```
+
+![alt text](img/ga4/debug_mode.png)
 
 
 CONSENT MODE
@@ -348,6 +389,21 @@ analytics_storage='granted'
 BIGQUERY -> RAW DATA --> EVENTOS SIN PROCESAR
 - Cuando desee obtener resultados más precisos de sus datos sin procesar, vea los resultados en BigQuery.
 - Cuando desee resultados más eficientes, visualice los resultados en sus informes estándar y personalizados y en Explorations y Looker Studio.
+
+> [!NOTE]  
+> Highlights information that users should take into account, even when skimming.
+
+> [!TIP]
+> Optional information to help a user be more successful.
+
+> [!IMPORTANT]  
+> Crucial information necessary for users to succeed.
+
+> [!WARNING]  
+> Critical content demanding immediate user attention due to potential risks.
+
+> [!CAUTION]
+> Negative potential consequences of an action.
 
 
 
