@@ -401,8 +401,7 @@ ___
 - [support.google.com > Connect Google Ads to Google Analytics](https://support.google.com/analytics/answer/9379420)
 - [support.google.com > Share audiences in GA4 with your linked advertising products](https://support.google.com/analytics/answer/12800258?hl=en)
 
-> [!NOTE] 
-> Esta integración permite:
+> [!NOTE] Esta integración permite:
 > 1. **Importación de conversiones:** Medir acciones clave en el sitio web o la app y utilizarlas para optimizar las pujas en Google Ads.
 > 2. **Segmentación de audiencias:** Crear listas de remarketing dinámico basadas en el comportamiento de los usuarios en GA4.
 > 3. **Análisis del rendimiento publicitario:** Combinar datos de GA4 con Google Ads para evaluar la efectividad de las campañas y ajustar estrategias en función del comportamiento de los usuarios.
