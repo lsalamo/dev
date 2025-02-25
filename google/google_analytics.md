@@ -16,6 +16,8 @@
     - [3.2 Dimensions](#32-dimensions)
     - [3.3 User ID](#33-user-id)
     - [3.4 DebugView](#34-debugview)
+  - [4. Product Links](#4-product-links)
+    - [4.1 Google Ads Links](#41-google-ads-links)
 
 <!--TOC-->
 
@@ -24,13 +26,13 @@
 ### 1. Properties
 
 #### 1.1 Subproperties
-___
 
 > **\> Admin \> Property Settings \> Property \> Subproperty management**
 
 Una subpropiedad es una propiedad que recibe datos filtrados de una propiedad fuente.
 
-> **IMPORTANTE:** Hay que crear los data streams antes validar los identificadores de web y apps.
+> [!IMPORTANT]  
+> Hay que crear los data streams antes validar los identificadores de web y apps.
 
 Docs
 ___
@@ -55,19 +57,21 @@ ___
 
 #### 2.1 Tagging for Google Analytics
 
-2.1.1 Configuration
+Configuration
 ___
 
 > **\> Admin \> Property Settings \> Data collection and modification \> Data streams \> Configure tag settings \> Admin \> Install this Google Tag \> Install manually**
 
 [Web](https://developers.google.com/analytics/devguides/collection/ga4/tag-options)
+- https://luissalamo.blogspot.com/
+- [El corte ingles](https://www.elcorteingles.es/)
 
 | Tag | ID | URL| Destinations | 
 |----------|:-----------------------------------|:-------------|:-------------|
 | Google Tag | Measurement ID (G-6NE7MBSF9K) | https://www.googletagmanager.com/gtag/js?id=G-6NE7MBSF9K | Google Analytics / Google Ads |
 | Google Tag Manager - **RECOMENDADO** | Container ID (GTM-NBTN82B) | https://www.googletagmanager.com/gtm.js?id=GTM-NBTN82B | Google Analytics / Google Ads |
 
-2.1.2 Cookies
+Cookies
 ___
 
 | Cookie Name | Default Expiration Time | Description | 
@@ -77,7 +81,7 @@ ___
 
 ![alt text](img/ga4/cookies.jpg)
 
-2.1.3 Google Tag
+Google Tag
 ___
 
 ```html
@@ -93,7 +97,6 @@ ___
 ```
 
 #### 2.2 Data Streams
----
 
 > **\> Admin \> Property Settings \> Data collection and modification \> Data streams**
 
@@ -101,21 +104,20 @@ ___
 - Genera un fragmento de código que agregas a tu aplicación o sitio para recopilar esos datos.
 - Si elimina un flujo de datos, Analytics conserva los datos históricos, pero no se realiza ningún otro procesamiento de esos datos ni se pueden utilizar en filtros de informes.
 
-> **IMPORTANTE:** Hay que consultar los "Firebase App ID" en la [consola de Firebase](https://console.firebase.google.com/).
+> [!IMPORTANT]  
+> Hay que consultar los "Firebase App ID" en la [consola de Firebase](https://console.firebase.google.com/)
 
 ![alt text](img/ga4/data_stream_web.jpg)
 ![alt text](img/ga4/data_steram_and.jpg)
 ![alt text](img/ga4/data_stream_ios.jpg)
 
 #### 2.3 Google Signals
----
 
 > **\> Admin \> Property Settings \> Data collection and modification \> Data colection \> Google signals data collection**
 
 Completa los datos de los usuarios que acceden a un sitio web o una aplicación a través de dispositivos en los que han iniciado sesión en sus cuentas de Google y tienen habilitada la personalización de anuncios. Estos datos son demográficos, intereses, etc.
 
 #### [2.4 Sessions](https://support.google.com/analytics/answer/9191807)
-___
 
 Docs
 ___
@@ -168,7 +170,7 @@ Estos eventos no tienen el parámetro "**engagement_time_msec**" porque represen
 - session_start
 
 Example
-- [El corte ingles](https://www.elcorteingles.es/)
+___
 
 Un usuario llega a la página principal de su sitio web, se desplaza hacia abajo después de 8 segundos y, a continuación, accede a una segunda página de su sitio web pasados 11 segundos. En la segunda página, el usuario se desplaza hacia abajo después de 6 segundos y, a continuación, abandona el sitio pasados 7 segundos.
 
@@ -312,7 +314,7 @@ ___
 Limits
 ___
 
-| Types of custom dimension   |      Standard property      |  360 property |
+| Types of custom dimension | Standard property | 360 property |
 |----------|:-------------:|------:|
 | User-scoped custom dimensions | 25 | 100 |
 | Event-scoped custom dimensions | 50 | 125 |
@@ -379,7 +381,31 @@ gtag('event', 'xyz', { 'debug_mode':true });
 
 ![alt text](img/ga4/debug_mode.png)
 
+Empiece a usar su sitio web o aplicación para monitorizar los eventos a medida que se activan.
 
+![alt text](img/ga4/debug_view.png)
+
+### 4. Product Links
+
+> **\> Admin \> Property Settings \> Product Links**
+
+Una de las principales ventajas competitivas de GA4 (gtag/firebase) es precisamente la activación de datos, gracias a su integración nativa con las plataformas de medios (Google Ads, DV360, SA360, etc.).
+
+#### 4.1 Google Ads Links
+
+> **\> Admin \> Property Settings \> Product Links > Google Ads Links**
+
+Docs
+___
+
+- [support.google.com > Connect Google Ads to Google Analytics](https://support.google.com/analytics/answer/9379420)
+- [support.google.com > Share audiences in GA4 with your linked advertising products](https://support.google.com/analytics/answer/12800258?hl=en)
+
+
+
+
+
+___
 CONSENT MODE
 
 analytics_storage='denied'
