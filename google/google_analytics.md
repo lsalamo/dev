@@ -421,11 +421,6 @@ ___
 ## [5. Reports](https://docs.google.com/document/d/17dhAOBJu9hX7p9ze_MtXraSu-uYJBjXSuY8xbzkcUDE/edit?tab=t.0#heading=h.nkfj3e8jo84o)
 
 
-
-
-
-
-
 CONSENT MODE
 
 analytics_storage='denied'
