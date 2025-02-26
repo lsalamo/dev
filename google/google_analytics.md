@@ -2,30 +2,29 @@
 
 <!--TOC-->
 
-- [Admin](#admin)
-  - [1. Properties](#1-properties)
-    - [1.1 Subproperties](#11-subproperties)
-  - [2. Data Collection](#2-data-collection)
-    - [2.1 Tagging for Google Analytics](#21-tagging-for-google-analytics)
-    - [2.2 Data Streams](#22-data-streams)
-    - [2.3 Google Signals](#23-google-signals)
-    - [2.4 Sessions](#24-sessions)
-    - [2.5 Data Retention](#25-data-retention)
-  - [3. Data display](#3-data-display)
-    - [3.1 Events](#31-events)
-    - [3.2 Dimensions](#32-dimensions)
-    - [3.3 User ID](#33-user-id)
-    - [3.4 DebugView](#34-debugview)
-  - [4. Product Links](#4-product-links)
-    - [4.1 Google Ads Links](#41-google-ads-links)
+- [1. Properties](#1-properties)
+  - [1.1 Subproperties](#11-subproperties)
+- [2. Data Collection](#2-data-collection)
+  - [2.1 Tagging for Google Analytics](#21-tagging-for-google-analytics)
+  - [2.2 Data Streams](#22-data-streams)
+  - [2.3 Google Signals](#23-google-signals)
+  - [2.4 Sessions](#24-sessions)
+  - [2.5 Data Retention](#25-data-retention)
+- [3. Data display](#3-data-display)
+  - [3.1 Events](#31-events)
+  - [3.2 Dimensions](#32-dimensions)
+  - [3.3 User ID](#33-user-id)
+  - [3.4 DebugView](#34-debugview)
+- [4. Product Links](#4-product-links)
+  - [4.1 Google Ads Links](#41-google-ads-links)
+  - [4.2 BigQuery Links](#42-bigquery-links)
+- [5. Reports](#5-reports)
 
 <!--TOC-->
 
-## Admin
+## 1. Properties
 
-### 1. Properties
-
-#### 1.1 Subproperties
+### 1.1 Subproperties
 
 > **\> Admin \> Property Settings \> Property \> Subproperty management**
 
@@ -53,9 +52,9 @@ ___
 ![alt text](img/ga4/subproperty_and-min.jpg)
 ![alt text](img/ga4/subproperty_ios-min.jpg)
 
-### 2. Data Collection
+## 2. Data Collection
 
-#### 2.1 Tagging for Google Analytics
+### 2.1 Tagging for Google Analytics
 
 Configuration
 ___
@@ -96,7 +95,7 @@ ___
 </script>
 ```
 
-#### 2.2 Data Streams
+### 2.2 Data Streams
 
 > **\> Admin \> Property Settings \> Data collection and modification \> Data streams**
 
@@ -111,13 +110,13 @@ ___
 ![alt text](img/ga4/data_steram_and.jpg)
 ![alt text](img/ga4/data_stream_ios.jpg)
 
-#### 2.3 Google Signals
+### 2.3 Google Signals
 
 > **\> Admin \> Property Settings \> Data collection and modification \> Data colection \> Google signals data collection**
 
 Completa los datos de los usuarios que acceden a un sitio web o una aplicación a través de dispositivos en los que han iniciado sesión en sus cuentas de Google y tienen habilitada la personalización de anuncios. Estos datos son demográficos, intereses, etc.
 
-#### [2.4 Sessions](https://support.google.com/analytics/answer/9191807)
+### [2.4 Sessions](https://support.google.com/analytics/answer/9191807)
 
 Docs
 ___
@@ -185,13 +184,13 @@ El evento scroll o cualquier otro es informado con el parametro "**engagement_ti
 | Se desplaza hacia abajo en la página | scroll | 6677 | 1 |
 | Abandona el sitio web | user_engagement | 7711 | 1 |
 
-#### [2.5 Data Retention](https://support.google.com/analytics/answer/7667196)
+### [2.5 Data Retention](https://support.google.com/analytics/answer/7667196)
 
 > **\> Admin \> Property Settings \> Data collection and modification \> Data retention**
 
-### 3. Data display
+## 3. Data display
 
-#### 3.1 Events
+### 3.1 Events
 
 > **\> Admin \> Property Settings \> Data Display \> Events**
 
@@ -283,7 +282,7 @@ https://region1.google-analytics.com/g/collect
 | _dbg | debug_mode | Si esta en modo debug |
 
 
-#### 3.2 Dimensions
+### 3.2 Dimensions
 
 3.2.1 Custom Dimensions
 
@@ -320,7 +319,7 @@ ___
 | Event-scoped custom dimensions | 50 | 125 |
 | Item-scoped custom dimensions | 10 | 25 |
 
-#### [3.3 User ID](https://support.google.com/analytics/answer/10976610)
+### [3.3 User ID](https://support.google.com/analytics/answer/10976610)
 
 > **\> Admin \> Property Settings \> Data Display \> Reporting Identity**
 
@@ -356,7 +355,7 @@ ___
 
 ![alt text](img/ga4/reporting_identity.jpg)
 
-#### [3.4 DebugView](https://support.google.com/analytics/answer/7201382)
+### [3.4 DebugView](https://support.google.com/analytics/answer/7201382)
 
 Habilite el modo de depuración para uno mismo
 - [Google Tag Assistant](https://tagassistant.google.com/)
@@ -385,13 +384,13 @@ Empiece a usar su sitio web o aplicación para monitorizar los eventos a medida 
 
 ![alt text](img/ga4/debug_view.png)
 
-### 4. Product Links
+## 4. Product Links
 
 > **\> Admin \> Property Settings \> Product Links**
 
 Una de las principales ventajas competitivas de GA4 (gtag/firebase) es precisamente la activación de datos, gracias a su integración nativa con las plataformas de medios (Google Ads, DV360, SA360, etc.).
 
-#### 4.1 Google Ads Links
+### 4.1 Google Ads Links
 
 > **\> Admin \> Property Settings \> Product Links > Google Ads Links**
 
@@ -403,15 +402,30 @@ ___
 
 > [!NOTE] 
 > Esta integración permite:
-> 1. **Importación de conversiones:** Medir acciones clave en el sitio web o la app y utilizarlas para optimizar las pujas en Google Ads.
+> 1. **Importación de conversiones:** Importamos las conversiones de GA4 a Google Ads para poder optimizar nuestras campañas en base a ellas. 
 > 2. **Segmentación de audiencias:** Crear listas de remarketing dinámico basadas en el comportamiento de los usuarios en GA4.
 > 3. **Análisis del rendimiento publicitario:** Combinar datos de GA4 con Google Ads para evaluar la efectividad de las campañas y ajustar estrategias en función del comportamiento de los usuarios.
 > 4. **Casos de uso avanzados:** Por ejemplo, la creación de clústeres de usuarios mediante la integración de GA4 con un CRM en BigQuery, la generación de modelos de valor y, posteriormente, la importación de estas audiencias a GA4 para optimizar las pujas en Google Ads (aumentándolas para usuarios de alto valor y reduciéndolas para usuarios de menor valor).
 
+### 4.2 BigQuery Links
 
+> **\> Admin \> Property Settings \> Product Links > BigQuery Links**
 
-
+Configure data streams and events
 ___
+
+![alt text](img/ga4/bigquery.png)
+
+![alt text](img/ga4/bigquery_project.png)
+
+## [5. Reports](https://docs.google.com/document/d/17dhAOBJu9hX7p9ze_MtXraSu-uYJBjXSuY8xbzkcUDE/edit?tab=t.0#heading=h.nkfj3e8jo84o)
+
+
+
+
+
+
+
 CONSENT MODE
 
 analytics_storage='denied'
